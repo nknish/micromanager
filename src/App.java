@@ -1,20 +1,30 @@
 import java.util.Scanner;
 
 public class App {
-    public static void main(String[] args) throws Exception {
-        Scanner k = new Scanner(System.in);
-        String latestResponse;
-        latestResponse = promptAndGet("hello! this is a test. i hope this works as it would be pretty darn cool.", k);
+    // scanner and its most recent input
+    static Scanner k = new Scanner(System.in);
+    static String userInput;
+
+    // things the player sets at the beginning
+    static String townName;
+    static String playerName;
+
+    public static void main(String[] args) {
+        prompt("hey! welcome to micromanager! what's your name?");
+        playerName = userInput;
+        prompt("cool. nice to meet you, " + playerName + "! what do you want your town to be called?");
+        townName = userInput;
+        prompt("awesome. welcome to " + townName + ", " + playerName + "! you're the new grid manager.");
         while (true) {
-            latestResponse = promptAndGet("your latest response: " + latestResponse, k);
+            prompt("your latest response: " + userInput);
         }
     }
 
     // slow print the prompt, get input on next line
-    public static String promptAndGet(String prompt, Scanner k) {
+    public static void prompt(String prompt) {
         sPrint(prompt); // flaw: the user can type and interrupt this
         System.out.println();
-        return k.nextLine();
+        userInput = k.nextLine();
     }
 
     // slow print. maybe add a param for speed?
