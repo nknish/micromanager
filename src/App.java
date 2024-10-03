@@ -17,6 +17,10 @@ public class App {
         prompt("awesome. welcome to " + townName + ", " + playerName + "! you're the new grid manager.");
         while (true) {
             prompt("your latest response: " + userInput);
+            if (userInput.equalsIgnoreCase("quit")) {
+                sPrint("im gettin out of here!");
+                break;
+            }
         }
     }
 
