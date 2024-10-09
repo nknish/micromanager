@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class App {
+public class Main {
     // scanner and its most recent input
     static Scanner k = new Scanner(System.in);
     static String userInput;
@@ -15,12 +15,23 @@ public class App {
         prompt("cool. nice to meet you, " + playerName + "! what do you want your town to be called?");
         townName = userInput;
         prompt("awesome. welcome to " + townName + ", " + playerName + "! you're the new grid manager.");
-        while (true) {
-            prompt("your latest response: " + userInput);
-            if (userInput.equalsIgnoreCase("quit")) {
-                sPrint("im gettin out of here!");
-                break;
+        boolean running = true;
+        String prompt = "say something!";
+        String response = "";
+        while (running) {
+            prompt(prompt);
+            switch (userInput.toLowerCase()) {
+                case "quit":
+                    response = "im gettin out of here!";
+                    running = false;
+                    break;
+                case "help":
+                    response = "here's some helpful info (jk no info yet)";
+                    break;
+                default:
+                    response = "your latest response: " + userInput;
             }
+            sPrint(response);
         }
     }
 
