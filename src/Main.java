@@ -5,6 +5,14 @@ public class Main {
     static Scanner k = new Scanner(System.in);
     static String userInput;
 
+    // what we ask the user and how we respond
+    static String prompt = "";
+    static String response = "";
+
+    // how long does computer delay typing, and how much time between chars (in ms)
+    static int delay = 200;
+    static int charDelay = 15;
+
     // things the player sets at the beginning
     static String townName;
     static String playerName;
@@ -14,43 +22,50 @@ public class Main {
         playerName = userInput;
         prompt("cool. nice to meet you, " + playerName + "! what do you want your town to be called?");
         townName = userInput;
-        prompt("awesome. welcome to " + townName + ", " + playerName + "! you're the new grid manager.");
+        sPrint("awesome. welcome to " + townName + ", " + playerName + "! you're the new grid manager.\n");
         boolean running = true;
-        String prompt = "say something!";
-        String response = "";
+        prompt = "say something!";
         while (running) {
             prompt(prompt);
             switch (userInput.toLowerCase()) {
                 case "quit":
-                    response = "im gettin out of here!";
+                    response = "you said: quit";
                     running = false;
                     break;
                 case "help":
                     response = "here's some helpful info (jk no info yet)";
                     break;
                 default:
-                    response = "your latest response: " + userInput;
+                    response = "your said: " + userInput;
             }
-            sPrint(response);
+            sPrint(response + "\n");
         }
+        quit();
+
     }
 
     // slow print the prompt, get input on next line
     public static void prompt(String prompt) {
-        sPrint(prompt); // flaw: the user can type and interrupt this
-        System.out.println();
-        userInput = k.nextLine();
+        boolean valid = false;
+        while (!valid) {
+            sPrint(prompt); // TODO: the user can type and interrupt this. stop that!
+            System.out.println();
+            userInput = k.nextLine();
+            if (userInput.strip() != "") {
+                valid = true;
+            }
+        }
     }
 
-    // slow print. maybe add a param for speed?
+    // slow print. speeds controlled by static ints
     public static void sPrint(String s) {
-        sleep(400);
+        sleep(delay);
         char[] arr = s.toCharArray();
         for (char c : arr) {
             System.out.print(c);
-            sleep(40);
+            sleep(charDelay);
         }
-        sleep(400);
+        sleep(delay);
     }
 
     // find a consistent way to sleep, and to handle Interrupted
@@ -60,5 +75,12 @@ public class Main {
         } catch (InterruptedException ie) {
             System.out.println("what the heck");
         }
+    }
+
+    // whatever it does when they hit the quit command
+    // should probably have some save-related feature?
+    public static void quit() {
+        sPrint("thanks for playing! bye now\n");
+        System.exit(1);
     }
 }
