@@ -1,0 +1,29 @@
+{
+    "scenarios": [
+        {
+            "name": "priorities",
+            "months": [1],
+            "options": ["environmental protection", "lowering ghg emissions", "lowering consumer costs", "grid resilience", "lowering business costs"]
+        },
+        {
+            "name": "heatwave",
+            "months": [3, 4, 5, 6],
+            "options": ["brownout", "leave it alone"]
+        },
+        {
+            "name": "snowstorm",
+            "months": [9, 10, 11, 12],
+            "options": ["brownout", "leave it alone"]
+        },
+        {
+            "name": "repairs",
+            "months": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+            "options": ["get ahead", "bare minimum", "neglect"]
+        },
+        {
+            "name": "grant",
+            "months": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+            "options": ["apply to both", "apply to solar", "apply to wind", "ignore"]
+        }
+    ]
+}
