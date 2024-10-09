@@ -1,6 +1,7 @@
 ### programming tasks
 
 - create scenario class
+  - what components does each scenario need? text, choices, outcomes, etc.
 - figure out how to parse json into scenario object
 - user can run through 1 scenario
   - prompted correctly
