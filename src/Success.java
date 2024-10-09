@@ -10,6 +10,9 @@ public final class Success {
      * which can total up to 120 at the end (perfect score)
      */
     public static void updateScores(int cli, int con, int civ) {
+        if (cli < 0 || cli > 10 || con < 0 || con > 10 || civ < 0 || civ > 10) {
+            throw new IndexOutOfBoundsException("score updates must be within range 0-10");
+        }
         Success.cli += cli;
         Success.con += con;
         Success.civ += civ;
@@ -17,19 +20,19 @@ public final class Success {
 
     //
     public static int getCli() {
-        return normalize12(cli);
+        return normalize(cli);
     }
 
     public static int getCon() {
-        return normalize12(con);
+        return normalize(con);
     }
 
     public static int getCiv() {
-        return normalize12(civ);
+        return normalize(civ);
     }
 
     // return a normalized version of the score based on the month
-    public static int normalize12(int score) {
+    public static int normalize(int score) {
         if (month == 13)
             return score; // for 'month 13', aka end of game
         if (month == 0)
