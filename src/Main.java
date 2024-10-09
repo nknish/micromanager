@@ -18,29 +18,11 @@ public class Main {
     static String playerName;
 
     public static void main(String[] args) {
-        prompt("hey! welcome to micromanager! what's your name?");
-        playerName = userInput;
-        prompt("cool. nice to meet you, " + playerName + "! what do you want your town to be called?");
-        townName = userInput;
-        sPrint("awesome. welcome to " + townName + ", " + playerName + "! you're the new grid manager.\n");
-        boolean running = true;
-        prompt = "say something!";
-        while (running) {
-            prompt(prompt);
-            switch (userInput.toLowerCase()) {
-                case "quit":
-                    response = "you said: quit";
-                    running = false;
-                    break;
-                case "help":
-                    response = "here's some helpful info (jk no info yet)";
-                    break;
-                default:
-                    response = "your said: " + userInput;
-            }
-            sPrint(response + "\n");
-        }
-        quit();
+        load(); // TODO: gives the user a chance to load a save code
+        intro(); // introduces player to the game, does some setup
+        mainLoop(); // runs indefinitely, usually (this will get more complicated)
+        save(); // TODO: gives the user a save code
+        quit(); // exits kindly and gently
 
     }
 
@@ -77,8 +59,47 @@ public class Main {
         }
     }
 
-    // whatever it does when they hit the quit command
-    // should probably have some save-related feature?
+    // lets the user pick up where they left off
+    public static void load() {
+        // TODO: write this method (way later)
+    }
+
+    // everything that happens at the beginning of a new game
+    public static void intro() {
+        prompt("hey! welcome to micromanager! what's your name?");
+        playerName = userInput;
+        prompt("cool. nice to meet you, " + playerName + "! what do you want your town to be called?");
+        townName = userInput;
+        sPrint("awesome. welcome to " + townName + ", " + playerName + "! you're the new grid manager.\n");
+    }
+
+    // the main loop and switch for input! runs the whole game
+    public static void mainLoop() {
+        boolean running = true;
+        prompt = "say something!";
+        while (running) {
+            prompt(prompt);
+            switch (userInput.toLowerCase()) {
+                case "quit":
+                    response = "you said: quit";
+                    running = false;
+                    break;
+                case "help":
+                    response = "here's some helpful info (jk no info yet)";
+                    break;
+                default:
+                    response = "your said: " + userInput;
+            }
+            sPrint(response + "\n");
+        }
+    }
+
+    // provides the user with a chance to get a save code
+    public static void save() {
+        // TODO: write this method (way later)
+    }
+
+    // a nice chill, friendly exit
     public static void quit() {
         sPrint("thanks for playing! bye now\n");
         System.exit(1);
