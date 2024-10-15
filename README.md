@@ -1,6 +1,6 @@
 # _micromanager_
 
-**a text-based game where you manage a microgrid!**
+**a (wip) text-based game where you manage a microgrid!**
 
 ## format
 
@@ -9,8 +9,8 @@
 
 ## setting
 
-- small isolated town (gridville?)
-- pretty steady population
+- small isolated town (you pick the name)
+   steady population
 - former power source: evil inc. coal plant
   - reliable, fairly cheap
   - still connected via transmission line
@@ -43,36 +43,35 @@
   - please the local gov by supporting their ordinances
   - help out small businesses (chamber of commerce vibe)
   - save the endangered chipmunk (environmental group)
-- MONEYMONEYMONEY - if you run out you get fired
+- MONEYMONEYMONEY - if you run out you have to borrow money (ruining civic score)
   - sell energy to customers
   - buy back from rooftop solar
   - buy energy from evil coal plant
   - invest in infrastructure repairs
-  - federal grants?
+  - federal grants
+  - rainy day money to rebuild after a disaster
 
 ## possible scenarios
 
 - the seasons (shifting demand and supply of energy)
-- 1 or 2 natural disasters, heat wave
-- aging infrastructure repair/replace (nimbys)
-- population growth
-- thinking about long-term plans?
-- new exciting technology!
+- 1 or 2 natural disasters, heat wave/storm
+- aging infrastructure repair/replace (nimbys in the way)
+- long term planning—start a project with rewards far in the future
+- new exciting technology! invest or avoid?
 - government (federal grants, local restrictions)
-- big company comes to the rescue! or not?
-- connect to a neighboring town
+- connect the grid to a neighboring town
 
 ## the backend
 
 - what goes on behind the scenes
   - each decision should spark changes in the various scores and cash
-  - each decision might have a bearing on future scenarios?
   - each possible choice has odds (d&d style) and severity of outcomes
   - at the end of 12 months, you can get fired (maybe)
-- what you control
+  - in a future version, each decision can have a bearing on future scenarios
+- what you control (through various scenarios)
   - sale of energy to consumers
   - buying from local coal plant
-  - buying energy off of rooftop folks
+  - buying energy off of rooftop solar folks
   - brownouts?
   - infrastructure repairs
 
