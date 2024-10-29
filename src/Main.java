@@ -105,7 +105,7 @@ public final class Main {
             fileScanner.close();
             return sb.toString();
         } catch (FileNotFoundException e) {
-            return "go to https://github.com/nknish/micromanager to find the statement";
+            return "statement file not found :(\ncheck out https://github.com/nknish/micromanager to find the statement";
         }
     }
 
