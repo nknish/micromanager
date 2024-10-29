@@ -1,3 +1,5 @@
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Main {
@@ -80,10 +82,30 @@ public class Main {
                 case "help":
                     response = "here's some helpful info (jk no info yet)";
                     break;
+                case "statement":
+                    response = getStatement();
+                    break;
                 default:
                     response = "your said: " + userInput;
             }
             sPrint(response + "\n");
+        }
+    }
+
+    // get the statement from .txt file into a string
+    public static String getStatement() {
+        File statement = new File("txt/statement.txt");
+        Scanner fileScanner;
+        try {
+            fileScanner = new Scanner(statement);
+            StringBuilder sb = new StringBuilder();
+            while (fileScanner.hasNext()) {
+                sb.append(fileScanner.nextLine()).append("\n");
+            }
+            fileScanner.close();
+            return sb.toString();
+        } catch (FileNotFoundException e) {
+            return "go to https://github.com/nknish/micromanager to find the statement";
         }
     }
 
