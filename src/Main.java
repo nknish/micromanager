@@ -2,22 +2,22 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class Main {
+public final class Main {
     // scanner and its most recent input
-    static Scanner k = new Scanner(System.in);
-    static String userInput;
+    private static Scanner k = new Scanner(System.in);
+    private static String userInput;
 
     // what we ask the user and how we respond
-    static String prompt = "";
-    static String response = "";
+    private static String prompt = "";
+    private static String response = "";
 
     // how long does computer delay typing, and how much time between chars (in ms)
-    static int delay = 200;
-    static int charDelay = 15;
+    private static int delay = 200;
+    private static int charDelay = 15;
 
     // things the player sets at the beginning
-    static String townName;
-    static String playerName;
+    private static String townName;
+    private static String playerName;
 
     public static void main(String[] args) {
         intro(); // introduces player to the game, does some setup
@@ -26,32 +26,8 @@ public class Main {
 
     }
 
-    // slow print the prompt, get input on next line
-    public static void prompt(String prompt) {
-        boolean valid = false;
-        while (!valid) {
-            sPrint(prompt); // TODO: the user can type and interrupt this. stop that!
-            System.out.println();
-            userInput = k.nextLine();
-            if (userInput.strip() != "") {
-                valid = true;
-            }
-        }
-    }
-
-    // slow print. speeds controlled by static ints
-    public static void sPrint(String s) {
-        sleep(delay);
-        char[] arr = s.toCharArray();
-        for (char c : arr) {
-            System.out.print(c);
-            sleep(charDelay);
-        }
-        sleep(delay);
-    }
-
     // find a consistent way to sleep, and to handle Interrupted
-    public static void sleep(int millis) {
+    private static void sleep(int millis) {
         try {
             Thread.sleep(millis);
         } catch (InterruptedException ie) {
@@ -60,7 +36,7 @@ public class Main {
     }
 
     // everything that happens at the beginning of a new game
-    public static void intro() {
+    private static void intro() {
         prompt("hey! welcome to micromanager! what's your name?");
         playerName = userInput;
         prompt("cool. nice to meet you, " + playerName + "! what do you want your town to be called?");
@@ -69,7 +45,7 @@ public class Main {
     }
 
     // the main loop and switch for input! runs the whole game
-    public static void mainLoop() {
+    private static void mainLoop() {
         boolean running = true;
         prompt = "say something!";
         while (running) {
@@ -92,8 +68,32 @@ public class Main {
         }
     }
 
+    // slow print the prompt, get input on next line
+    private static void prompt(String prompt) {
+        boolean valid = false;
+        while (!valid) {
+            sPrint(prompt); // TODO: the user can type and interrupt this. stop that!
+            System.out.println();
+            userInput = k.nextLine();
+            if (userInput.strip() != "") {
+                valid = true;
+            }
+        }
+    }
+
+    // slow print. speeds controlled by static ints
+    private static void sPrint(String s) {
+        sleep(delay);
+        char[] arr = s.toCharArray();
+        for (char c : arr) {
+            System.out.print(c);
+            sleep(charDelay);
+        }
+        sleep(delay);
+    }
+
     // get the statement from .txt file into a string
-    public static String getStatement() {
+    private static String getStatement() {
         File statement = new File("txt/statement.txt");
         Scanner fileScanner;
         try {
@@ -110,8 +110,12 @@ public class Main {
     }
 
     // a nice chill, friendly exit
-    public static void quit() {
+    private static void quit() {
         sPrint("thanks for playing! bye now\n");
         System.exit(1);
+    }
+
+    // non-instantiable
+    private Main() {
     }
 }
