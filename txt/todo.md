@@ -17,7 +17,6 @@
   - some scenarios only occur in certain seasons
   - the same scenario occurs first every time (setting priorities) and maybe last time (town hall)?
   - some only occur under certain circumstances (low money, high ghg) based on previous decisions
-- generate/load save codes
 
 ### content tasks
 

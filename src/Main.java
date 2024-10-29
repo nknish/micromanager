@@ -18,10 +18,8 @@ public class Main {
     static String playerName;
 
     public static void main(String[] args) {
-        load(); // TODO: gives the user a chance to load a save code
         intro(); // introduces player to the game, does some setup
         mainLoop(); // runs indefinitely, usually (this will get more complicated)
-        save(); // TODO: gives the user a save code
         quit(); // exits kindly and gently
 
     }
@@ -59,11 +57,6 @@ public class Main {
         }
     }
 
-    // lets the user pick up where they left off
-    public static void load() {
-        // TODO: write this method (way later)
-    }
-
     // everything that happens at the beginning of a new game
     public static void intro() {
         prompt("hey! welcome to micromanager! what's your name?");
@@ -92,11 +85,6 @@ public class Main {
             }
             sPrint(response + "\n");
         }
-    }
-
-    // provides the user with a chance to get a save code
-    public static void save() {
-        // TODO: write this method (way later)
     }
 
     // a nice chill, friendly exit
