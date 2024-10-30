@@ -1,8 +1,9 @@
+import java.util.Map;
+
 public class Scenario {
     private StringBuilder prompt; // build a string for the prompt using JSON text and success metrics
     private boolean[] months; // in what months could the scenario occur?
-    private String[] responses; // each possible response is a string, user chooses based on index
-    private Outcome[] outcomes; // each response corresponds with an outcome at the same index
+    private Map<String, Outcome> responses; // all of the possible responses, and their
 
     private class Outcome {
         private StringBuilder text;
