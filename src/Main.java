@@ -46,7 +46,7 @@ public final class Main {
                     response = "here's some helpful info (jk no info yet)";
                     break;
                 case "statement":
-                    response = getStatement();
+                    response = R.getStatement();
                     break;
                 default:
                     response = "your said: " + userInput;
@@ -65,23 +65,6 @@ public final class Main {
             if (userInput.strip() != "") {
                 valid = true;
             }
-        }
-    }
-
-    // get the statement from .txt file into a string
-    private static String getStatement() {
-        File statement = new File("txt/statement.txt");
-        Scanner fileScanner;
-        try {
-            fileScanner = new Scanner(statement);
-            StringBuilder sb = new StringBuilder();
-            while (fileScanner.hasNext()) {
-                sb.append(fileScanner.nextLine()).append("\n");
-            }
-            fileScanner.close();
-            return sb.toString();
-        } catch (FileNotFoundException e) {
-            return "statement file not found :(\ncheck out https://github.com/nknish/micromanager to find the statement";
         }
     }
 
