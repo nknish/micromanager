@@ -11,10 +11,6 @@ public final class Main {
     private static String prompt = "";
     private static String response = "";
 
-    // how long does computer delay typing, and how much time between chars (in ms)
-    private static int delay = 200;
-    private static int charDelay = 15;
-
     // things the player sets at the beginning
     private static String townName;
     private static String playerName;
@@ -26,22 +22,13 @@ public final class Main {
 
     }
 
-    // find a consistent way to sleep, and to handle Interrupted
-    private static void sleep(int millis) {
-        try {
-            Thread.sleep(millis);
-        } catch (InterruptedException ie) {
-            System.out.println("what the heck");
-        }
-    }
-
     // everything that happens at the beginning of a new game
     private static void intro() {
         prompt("hey! welcome to micromanager! what's your name?");
         playerName = userInput;
         prompt("cool. nice to meet you, " + playerName + "! what do you want your town to be called?");
         townName = userInput;
-        sPrint("awesome. welcome to " + townName + ", " + playerName + "! you're the new grid manager.\n");
+        U.print("awesome. welcome to " + townName + ", " + playerName + "! you're the new grid manager.\n");
     }
 
     // the main loop and switch for input! runs the whole game
@@ -64,7 +51,7 @@ public final class Main {
                 default:
                     response = "your said: " + userInput;
             }
-            sPrint(response + "\n");
+            U.print(response + "\n");
         }
     }
 
@@ -72,24 +59,13 @@ public final class Main {
     private static void prompt(String prompt) {
         boolean valid = false;
         while (!valid) {
-            sPrint(prompt); // TODO: the user can type and interrupt this. stop that!
+            U.print(prompt); // TODO: the user can type and interrupt this. stop that!
             System.out.println();
             userInput = k.nextLine();
             if (userInput.strip() != "") {
                 valid = true;
             }
         }
-    }
-
-    // slow print. speeds controlled by static ints
-    private static void sPrint(String s) {
-        sleep(delay);
-        char[] arr = s.toCharArray();
-        for (char c : arr) {
-            System.out.print(c);
-            sleep(charDelay);
-        }
-        sleep(delay);
     }
 
     // get the statement from .txt file into a string
@@ -111,7 +87,7 @@ public final class Main {
 
     // a nice chill, friendly exit
     private static void quit() {
-        sPrint("thanks for playing! bye now\n");
+        U.print("thanks for playing! bye now\n");
         System.exit(1);
     }
 
