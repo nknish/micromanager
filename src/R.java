@@ -1,16 +1,14 @@
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 import com.google.gson.Gson;
 
 // R is for Reader!
 public final class R {
-
-    public static List<Scenario> getScenariosJSON() {
+    public static ArrayList<Scenario> getScenariosJSON() {
         Gson gson = new Gson();
-        List<Scenario> scens = new ArrayList<Scenario>();
+        ArrayList<Scenario> scens = new ArrayList<Scenario>();
         int noOfScenarios = 1;
         for (int i = 0; i < noOfScenarios; i++) {
             File f = new File("json/scenario" + i + ".json");

@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public final class Main {
@@ -13,11 +14,16 @@ public final class Main {
     private static String townName;
     private static String playerName;
 
+    // scenarios (in order)
+    private static ArrayList<Scenario> scenarios;
+
     public static void main(String[] args) {
         intro(); // introduces player to the game, does some setup
-        mainLoop(); // runs indefinitely, usually (this will get more complicated)
-        quit(); // exits kindly and gently
-
+        setup(); // preps scenarios
+        mainLoop(); // runs through the whole game
+        results(); // the player sees how they did!
+        outro(); // gives some closing information, allows them to start over?
+        U.quit(); // exits kindly and gently
     }
 
     // everything that happens at the beginning of a new game
@@ -27,6 +33,10 @@ public final class Main {
         prompt("cool. nice to meet you, " + playerName + "! what do you want your town to be called?");
         townName = userInput;
         U.print("awesome. welcome to " + townName + ", " + playerName + "! you're the new grid manager.\n");
+    }
+
+    private static void setup() {
+        scenarios = R.getScenariosJSON();
     }
 
     // the main loop and switch for input! runs the whole game
@@ -53,6 +63,16 @@ public final class Main {
         }
     }
 
+    // the player sees how they did!
+    private static void results() {
+        U.print("here's how you did:");
+    }
+
+    // a chance for more info on climate change/microgrids
+    private static void outro() {
+        U.print("thanks for playing!");
+    }
+
     // slow print the prompt, get input on next line
     private static void prompt(String prompt) {
         boolean valid = false;
@@ -64,12 +84,6 @@ public final class Main {
                 valid = true;
             }
         }
-    }
-
-    // a nice chill, friendly exit
-    private static void quit() {
-        U.print("thanks for playing! bye now\n");
-        System.exit(1);
     }
 
     // non-instantiable
