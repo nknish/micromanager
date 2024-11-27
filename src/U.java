@@ -1,8 +1,8 @@
 // U is for Useful!
 public final class U {
     // how long does computer delay typing, and how much time between chars (in ms)
-    private static int delay = 200;
-    private static int charDelay = 15;
+    private static int delay = 20;
+    private static int charDelay = 2;
 
     // find a consistent way to sleep, and to handle Interrupted
     private static void sleep(int millis) {
@@ -21,6 +21,21 @@ public final class U {
             sleep(charDelay);
         }
         sleep(delay);
+    }
+
+    protected static void print(String s, String voice) {
+        print("[" + voice + "] - ");
+        print(s);
+    }
+
+    protected static void println(String s) {
+        print(s);
+        System.out.println();
+    }
+
+    protected static void println(String s, String voice) {
+        print(s, voice);
+        System.out.println();
     }
 
     // a nice chill, friendly exit
