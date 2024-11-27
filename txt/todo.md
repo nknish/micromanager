@@ -1,8 +1,5 @@
 ### programming tasks
 
-- create scenario class
-  - what components does each scenario need? text, choices, outcomes, etc.
-- figure out how to parse json into scenario object
 - user can run through 1 scenario
   - prompted correctly
   - given correct options
@@ -17,6 +14,9 @@
   - some scenarios only occur in certain seasons
   - the same scenario occurs first every time (setting priorities) and maybe last time (town hall)?
   - some only occur under certain circumstances (low money, high ghg) based on previous decisions
+- filepath stuff
+  - it may work in an ide, but will it work irl?
+- package for consumption!!!
 
 ### content tasks
 
@@ -31,8 +31,8 @@
   - what the possible responses are
   - what the outcomes are (with probability/randomness, DND style)
 - lovely intro
-  - setting the right vibe
-  - giving info on microgrids?
+  - improve content quality
 - lovely outro
   - legacy of the micromanager
   - big pictures facts about climate change on the way out
+- write a great statement
