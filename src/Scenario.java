@@ -1,17 +1,17 @@
-import com.google.gson.Gson;
-import java.util.Map;
+import java.util.List;
 
 public class Scenario {
-    private StringBuilder prompt; // build a string for the prompt using JSON text and success metrics
-    private boolean[] months; // in what months could the scenario occur?
-    private Map<String, Outcome> responses; // all of the possible responses, and their
+    public String prompt;
+    public int[] months;
+    public List<Outcome> responses;
 
-    private class Outcome {
-        private StringBuilder text;
-        private int dCli;
-        private int dCon;
-        private int dCiv;
-        private int dMoney;
+    public class Outcome {
+        public int option; 
+        public String text;
+        public int dCli;
+        public int dCon;
+        public int dCiv;
+        public int dMoney;
 
     }
 }

@@ -1,0 +1,47 @@
+{
+    "name": "priorities",
+    "prompt": "It's your first day as a grid manager. What is your priority?",
+    "months": [1],
+    "responses": [
+        {
+            "option": 1,
+            "text": "yay green stuff",
+            "dCli": 0,
+            "dCon": 0,
+            "dCiv": 0,
+            "dMoney": 0
+        },
+        {
+            "option": 2,
+            "text": "yay green stuff",
+            "dCli": 0,
+            "dCon": 0,
+            "dCiv": 0,
+            "dMoney": 0
+        },
+        {
+            "option": 3,
+            "text": "yay cheap energy",
+            "dCli": 0,
+            "dCon": 0,
+            "dCiv": 0,
+            "dMoney": 0
+        },
+        {
+            "option": 4,
+            "text": "yay no power outages",
+            "dCli": 0,
+            "dCon": 0,
+            "dCiv": 0,
+            "dMoney": 0
+        },
+        {
+            "option": 5,
+            "text": "the lobbyists love you",
+            "dCli": 0,
+            "dCon": 0,
+            "dCiv": 0,
+            "dMoney": 0
+        }
+    ]
+}
