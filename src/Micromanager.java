@@ -16,19 +16,15 @@ public final class Micromanager {
     protected final static String guide = "chuck";
 
     // scenarios (in order)
-    private static ArrayList<Scenario> scenarios;
+    protected static ArrayList<Scenario> scenarios;
 
     public static void main(String[] args) {
         new Intro();
-        setup(); // preps scenarios
+        new Setup();
         mainLoop(); // runs through the whole game
         results(); // the player sees how they did!
         outro(); // gives some closing information, allows them to start over?
         U.quit(); // exits kindly and gently
-    }
-
-    private static void setup() {
-        scenarios = R.getScenariosJSON();
     }
 
     // the main loop and switch for input! runs the whole game
