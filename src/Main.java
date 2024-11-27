@@ -41,7 +41,7 @@ public final class Main {
                     running = false;
                     break;
                 case "help":
-                    response = "here's some helpful info (jk no info yet)";
+                    response = R.getHelp();
                     break;
                 case "statement":
                     response = R.getStatement();

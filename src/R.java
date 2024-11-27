@@ -13,7 +13,7 @@ public final class R {
         List<Scenario> scens = new ArrayList<Scenario>();
         int noOfScenarios = 1;
         for (int i = 0; i < noOfScenarios; i++) {
-            File f = new File("txt/scenario" + i + ".json");
+            File f = new File("json/scenario" + i + ".json");
             String catchMessage = "uh oh, i can't read json and everything's broken";
             String json = getWholeFile(f, catchMessage);
             if (json.equals(catchMessage)) {
@@ -31,6 +31,12 @@ public final class R {
         return getWholeFile(f, catchMessage);
     }
 
+    public static String getHelp() {
+        File f = new File("txt/help.txt");
+        String catchMessage = "we need help getting help, sorry :(";
+        return getWholeFile(f, catchMessage);
+    }
+
     //
     private static String getWholeFile(File f, String catchMessage) {
         try {
@@ -40,7 +46,7 @@ public final class R {
                 sb.append(s.nextLine()).append("\n");
             }
             s.close();
-            return sb.toString();
+            return sb.toString().strip();
         } catch (FileNotFoundException e) {
             return catchMessage;
         }
