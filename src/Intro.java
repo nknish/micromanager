@@ -3,7 +3,7 @@ import java.util.Scanner;
 public final class Intro {
 
     private Scanner k = new Scanner(System.in);
-    private String gn = Main.guide;
+    private String gn = Micromanager.guide;
     private String pn;
     private String tn;
     private String[] acks = { "sounds good", "ok", "gotcha", "makes sense" };
@@ -80,7 +80,7 @@ public final class Intro {
             U.print("", "you");
             pn = k.nextLine().strip().toLowerCase();
             if (!pn.equals("")) {
-                Main.playerName = pn;
+                Micromanager.playerName = pn;
                 break;
             }
         }
@@ -91,7 +91,7 @@ public final class Intro {
             U.print("", pn);
             tn = k.nextLine().strip().toLowerCase();
             if (!tn.equals("")) {
-                Main.townName = tn;
+                Micromanager.townName = tn;
                 break;
             }
         }

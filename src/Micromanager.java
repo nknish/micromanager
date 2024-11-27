@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public final class Main {
+public final class Micromanager {
     // scanner and its most recent input
     private static Scanner k = new Scanner(System.in);
     private static String userInput = "";
@@ -78,6 +78,6 @@ public final class Main {
     }
 
     // non-instantiable
-    private Main() {
+    private Micromanager() {
     }
 }
