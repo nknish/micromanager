@@ -13,7 +13,7 @@ public final class Micromanager {
     // things the player sets at the beginning
     protected static String townName;
     protected static String playerName = "you";
-    protected final static String guide = "chuck";
+    protected static String guide = "chuck";
 
     // scenarios (in order)
     protected static ArrayList<Scenario> scenarios;

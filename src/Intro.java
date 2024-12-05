@@ -75,6 +75,7 @@ public final class Intro {
 
     private void getNameAndTown() {
         // get player name
+        U.println();
         while (true) {
             U.println("hey! welcome to micromanager! what's your name?", gn);
             U.print("", "you");
@@ -85,9 +86,28 @@ public final class Intro {
             }
         }
 
+        // make sure the names are different
+        String namePrompt = "cool. nice to meet you, " + pn + "! what do you want your town to be called?";
+        if (pn.equals(gn)) {
+            U.println("whoa, hold on there. we have the same name! that might get confusing.", gn);
+            U.println("hmm.......what to do, what to do?", gn);
+            U.println("...i know! i'll just change my name!", gn);
+            Micromanager.guide = "jeremiah";
+            gn = Micromanager.guide;
+            U.println();
+            U.println("...............................................................................");
+            U.println();
+            U.println("wow, this is much better! i think " + gn + " really suits me!", gn);
+            U.print("[press enter to compliment " + gn + " on his new name] ");
+            k.nextLine();
+            U.println("why, thank you! anyways, back to business.", gn);
+            U.println();
+            namePrompt = "so, " + pn + ", what do you want your town to be called?";
+        }
+
         // get town name
         while (true) {
-            U.println("cool. nice to meet you, " + pn + "! what do you want your town to be called?", gn);
+            U.println(namePrompt, gn);
             U.print("", pn);
             tn = k.nextLine().strip().toLowerCase();
             if (!tn.equals("")) {
@@ -126,6 +146,7 @@ public final class Intro {
 
     // [0]prompt, [1]go, [2]stay, [3]detour
     private void dialogue(String[] contents, Scanner k) {
+        U.println();
         U.println(contents[0], gn); // prompt
         U.println("   [1]: " + contents[1]);
         U.println("   [2]: " + contents[2]);

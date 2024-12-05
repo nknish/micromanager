@@ -28,6 +28,10 @@ public final class U {
         print(s);
     }
 
+    protected static void println() {
+        System.out.println();
+    }
+
     protected static void println(String s) {
         print(s);
         System.out.println();
@@ -39,10 +43,10 @@ public final class U {
     }
 
     protected static void clear() {
-        print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-        print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-        print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-        print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+        print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+        print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+        print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+        print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
     }
 
     // a nice chill, friendly exit
