@@ -9,7 +9,7 @@ public final class U {
         try {
             Thread.sleep(millis);
         } catch (InterruptedException ie) {
-            System.out.println("what the heck");
+            println("what the heck");
         }
     }
 
@@ -47,7 +47,7 @@ public final class U {
 
     // a nice chill, friendly exit
     protected static void quit() {
-        print("thanks for playing! bye now\n");
+        println("thanks for playing! bye now");
         System.exit(1);
     }
 

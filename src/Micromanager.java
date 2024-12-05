@@ -47,18 +47,18 @@ public final class Micromanager {
                 default:
                     response = "your said: " + userInput;
             }
-            U.print(response + "\n");
+            U.println(response);
         }
     }
 
     // the player sees how they did!
     private static void results() {
-        U.print("here's how you did:");
+        U.println("here's how you did:");
     }
 
     // a chance for more info on climate change/microgrids
     private static void outro() {
-        U.print("thanks for playing!");
+        U.println("thanks for playing!");
     }
 
     // slow print the prompt, get input on next line

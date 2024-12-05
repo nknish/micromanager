@@ -11,7 +11,7 @@ public final class R {
         ArrayList<Scenario> scens = new ArrayList<Scenario>();
         int noOfScenarios = 1;
         for (int i = 0; i < noOfScenarios; i++) {
-            File f = new File("json/scenario" + i + ".json");
+            File f = new File("../json/scenario" + i + ".json");
             String catchMessage = "uh oh, i can't read json and everything's broken";
             String json = getWholeFile(f, catchMessage);
             if (json.equals(catchMessage)) {
@@ -26,13 +26,23 @@ public final class R {
     public static String getStatement() {
         File f = new File("txt/statement.txt");
         String catchMessage = "statement file not found :(\ncheck out https://github.com/nknish/micromanager to find the statement";
-        return getWholeFile(f, catchMessage);
+        String s = getWholeFile(f, catchMessage);
+        if (s.equals(catchMessage)) {
+            f = new File("../txt/statement.txt");
+            s = getWholeFile(f, catchMessage);
+        }
+        return s;
     }
 
     public static String getHelp() {
         File f = new File("txt/help.txt");
         String catchMessage = "we need help getting help, sorry :(";
-        return getWholeFile(f, catchMessage);
+        String s = getWholeFile(f, catchMessage);
+        if (s.equals(catchMessage)) {
+            f = new File("../txt/help.txt");
+            s = getWholeFile(f, catchMessage);
+        }
+        return s;
     }
 
     //
