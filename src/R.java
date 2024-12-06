@@ -15,6 +15,10 @@ public final class R {
             String catchMessage = "uh oh, i can't read json and everything's broken";
             String json = getWholeFile(f, catchMessage);
             if (json.equals(catchMessage)) {
+                f = new File("json/scenario" + i + ".json");
+                json = getWholeFile(f, catchMessage);
+            }
+            if (json.equals(catchMessage)) {
                 throw new RuntimeException(catchMessage);
             } else {
                 scens.add(gson.fromJson(json, Scenario.class));
