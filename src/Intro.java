@@ -6,7 +6,7 @@ public final class Intro {
     private String gn = Micromanager.guide;
     private String pn;
     private String tn;
-    private String[] acks = { "sounds good", "ok", "gotcha", "makes sense" };
+    private String[] acks = { "sounds good", "ok", "gotcha", "makes sense", "righty-o", "uh-huh", "yup" };
     private String[][] intro = {
             { "before i get started: i'm gonna fill you in on some things, but at the end feel free to ask me to repeat myself!",
                     "huh?", "okey-dokey",
@@ -118,7 +118,7 @@ public final class Intro {
         }
 
         // wrap up the greeting, get to details
-        P.println("awesome. Welcome to " + tn + ", " + pn + "! i'm " + gn + ", your administrative assistant", gn);
+        P.println("awesome. welcome to " + tn + ", " + pn + "! i'm " + gn + ", your administrative assistant", gn);
         P.print("[press enter to say 'hey " + gn + "!'] ");
         k.nextLine();
 
