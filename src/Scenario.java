@@ -6,7 +6,7 @@ public class Scenario {
     public List<Outcome> responses;
 
     public class Outcome {
-        public int option; 
+        public int option;
         public String text;
         public int dCli;
         public int dCon;

@@ -33,7 +33,7 @@ public final class P {
                 sleep(charDelay * ((c == '.' || c == '?' || c == '!') ? 5 : 1)); // pause for sentences
             }
             if (w.length() >= 1 && (!w.equals(words[words.length - 1]) || s.charAt(s.length() - 1) == ' ')) {
-                System.out.print(" ");  // add back spaces lost to .split(" ")
+                System.out.print(" "); // add back spaces lost to .split(" ")
                 x++;
             }
             x++;
