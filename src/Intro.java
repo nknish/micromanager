@@ -188,6 +188,8 @@ public final class Intro {
     }
 
     private boolean isAdmin() {
+        if (pn == null | tn == null)
+            return false;
         return pn.equals("noah") && tn.equals("cooltown");
     }
 }
