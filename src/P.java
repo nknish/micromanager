@@ -1,5 +1,5 @@
-// U is for Useful!
-public final class U {
+// P is for Print!
+public final class P {
     // how long does computer delay typing, and how much time between chars (in ms)
     private static int delay = 200;
     private static int charDelay = 15;
@@ -71,6 +71,6 @@ public final class U {
     }
 
     // non-instantiable
-    private U() {
+    private P() {
     }
 }

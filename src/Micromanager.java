@@ -24,7 +24,7 @@ public final class Micromanager {
         mainLoop(); // runs through the whole game
         results(); // the player sees how they did!
         outro(); // gives some closing information, allows them to start over?
-        U.quit(); // exits kindly and gently
+        P.quit(); // exits kindly and gently
     }
 
     // the main loop and switch for input! runs the whole game
@@ -47,25 +47,25 @@ public final class Micromanager {
                 default:
                     response = "your said: " + userInput;
             }
-            U.println(response);
+            P.println(response);
         }
     }
 
     // the player sees how they did!
     private static void results() {
-        U.println("here's how you did:");
+        P.println("here's how you did:");
     }
 
     // a chance for more info on climate change/microgrids
     private static void outro() {
-        U.println("thanks for playing!");
+        P.println("thanks for playing!");
     }
 
     // slow print the prompt, get input on next line
     private static void prompt(String prompt) {
         while (true) {
-            U.println(prompt, guide);
-            U.print("", playerName);
+            P.println(prompt, guide);
+            P.print("", playerName);
             userInput = k.nextLine().toLowerCase();
             if (userInput.strip() != "") {
                 break;

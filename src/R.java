@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import com.google.gson.Gson;
 
-// R is for Reader!
+// R is for Read!
 public final class R {
     public static ArrayList<Scenario> getScenariosJSON() {
         Gson gson = new Gson();
