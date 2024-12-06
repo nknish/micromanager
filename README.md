@@ -1,6 +1,6 @@
 # _micromanager_
 
-**a (wip) text-based game where you manage a microgrid!**
+**a text-based game where you manage a microgrid!**
 
 ## format
 
@@ -43,12 +43,12 @@
   - please the local gov by supporting their ordinances
   - help out small businesses (chamber of commerce vibe)
   - save the endangered chipmunk (environmental group)
-- MONEYMONEYMONEY - if you run out you have to borrow money (ruining civic score)
+- MONEY - if you run out you have to borrow money (ruining civic score)
   - sell energy to customers
   - buy back from rooftop solar
   - buy energy from evil coal plant
   - invest in infrastructure repairs
-  - federal grants
+  - federal and state grants
   - rainy day money to rebuild after a disaster
 
 ## possible scenarios
@@ -74,10 +74,3 @@
   - buying energy off of rooftop solar folks
   - brownouts?
   - infrastructure repairs
-
-## swe goals
-
-- polished, finished product
-- downloadable off of github
-  - executable in terminal
-- do interesting backend calculations
