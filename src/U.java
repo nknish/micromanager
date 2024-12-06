@@ -1,8 +1,8 @@
 // U is for Useful!
 public final class U {
     // how long does computer delay typing, and how much time between chars (in ms)
-    private static int delay = 20;
-    private static int charDelay = 2;
+    private static int delay = 200;
+    private static int charDelay = 15;
 
     // find a consistent way to sleep, and to handle Interrupted
     private static void sleep(int millis) {
@@ -15,10 +15,25 @@ public final class U {
 
     protected static void print(String s) {
         sleep(delay);
-        char[] arr = s.toCharArray();
-        for (char c : arr) {
-            System.out.print(c);
-            sleep(charDelay);
+        String[] words = s.split(" ");
+        int x = 0;
+        for (String w : words) {
+            char[] arr = w.toCharArray();
+            if (x + arr.length > 95) {
+                println();
+                x = 0;
+            }
+            for (char c : arr) {
+                System.out.print(c);
+                if (c == '\n') {
+                    x = 0;
+                } else {
+                    x++;
+                }
+                sleep(charDelay);
+            }
+            System.out.print(" ");
+            x++;
         }
         sleep(delay);
     }
@@ -43,10 +58,10 @@ public final class U {
     }
 
     protected static void clear() {
-        print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-        print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-        print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-        print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+        println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+        println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+        println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+        println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
     }
 
     // a nice chill, friendly exit

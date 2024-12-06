@@ -69,6 +69,7 @@ public final class Intro {
                 break;
             } else if (s.equals("s")) {
                 U.println(R.getStatement());
+                U.println();
             }
         }
     }
