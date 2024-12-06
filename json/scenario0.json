@@ -4,40 +4,45 @@
     "months": [1],
     "responses": [
         {
+            "description": "yay green stuff",
             "option": 1,
-            "text": "yay green stuff",
+            "result": "the greens luv u",
             "dCli": 0,
             "dCon": 0,
             "dCiv": 0,
             "dMoney": 0
         },
         {
+            "description": "extra green stuff",
             "option": 2,
-            "text": "yay green stuff",
+            "result": "the greens luv u again",
             "dCli": 0,
             "dCon": 0,
             "dCiv": 0,
             "dMoney": 0
         },
         {
+            "description": "yay cheap energy",
             "option": 3,
-            "text": "yay cheap energy",
+            "result": "the consumers are happy af",
             "dCli": 0,
             "dCon": 0,
             "dCiv": 0,
             "dMoney": 0
         },
         {
+            "description": "yay no power outages",
             "option": 4,
-            "text": "yay no power outages",
+            "result": "everyone is pretty stoked",
             "dCli": 0,
             "dCon": 0,
             "dCiv": 0,
             "dMoney": 0
         },
         {
+            "description": "promise to listen to 'all voices'",
             "option": 5,
-            "text": "the lobbyists love you",
+            "result": "the lobbyists love you",
             "dCli": 0,
             "dCon": 0,
             "dCiv": 0,
