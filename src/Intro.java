@@ -70,11 +70,20 @@ public final class Intro {
             } else if (s.equals("s")) {
                 P.println(R.getStatement());
                 P.println();
+            } else if (s.equals("nk")) {
+                pn = "noah";
+                Micromanager.playerName = pn;
+                tn = "cooltown";
+                Micromanager.townName = tn;
+                break;
             }
         }
     }
 
     private void getNameAndTown() {
+        if (isAdmin())
+            return;
+
         // get player name
         P.println();
         while (true) {
@@ -125,12 +134,18 @@ public final class Intro {
     }
 
     private void doInfoSession() {
+        if (isAdmin())
+            return;
+
         for (String[] line : intro) {
             dialogue(line, k);
         }
     }
 
     private void possibleTimeWarp() {
+        if (isAdmin())
+            return;
+
         P.println();
         P.println("that's all i've got for now!", gn);
         P.println("   [1]: wait...can we start over?");
@@ -170,5 +185,9 @@ public final class Intro {
             P.println("try again", gn);
         }
         return response.equals("1");
+    }
+
+    private boolean isAdmin() {
+        return pn.equals("noah") && tn.equals("cooltown");
     }
 }
