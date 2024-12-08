@@ -32,7 +32,7 @@ public final class Success {
     }
 
     // return a normalized version of the score based on the month
-    public static int normalize(int score) {
+    private static int normalize(int score) {
         if (month == 13)
             return score; // for 'month 13', aka end of game
         if (month == 0)
