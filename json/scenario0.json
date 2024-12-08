@@ -6,9 +6,9 @@
                 "result": "the greens luv u",
                 "odds": 1,
                 "oddsBooster": "none",
-                "dCli": 0,
-                "dCon": 0,
-                "dCiv": 0,
+                "dCli": 10,
+                "dCon": 5,
+                "dCiv": 5,
                 "dMoney": 0
             }
         ],
