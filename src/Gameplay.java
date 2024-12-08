@@ -36,7 +36,7 @@ public final class Gameplay {
         // print all possible responses
         for (String responseString : responsesWithIndices) {
             if (responseString != null)
-                P.println("\t" + responseString);
+                P.println("......" + responseString);
         }
 
         P.println("so. what's your choice?", Micromanager.guide);

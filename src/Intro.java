@@ -148,8 +148,8 @@ public final class Intro {
 
         P.println();
         P.println("that's all i've got for now!", gn);
-        P.println("   [1]: wait...can we start over?");
-        P.println("   [2]: i'm ready to go!");
+        P.println("......[1]: wait...can we start over?");
+        P.println("......[2]: i'm ready to go!");
         if (promptForDetour(k)) {
             P.println("ok, back to the beginning!", gn);
             P.print("[press enter to time warp] ");
@@ -165,8 +165,8 @@ public final class Intro {
     private void dialogue(String[] contents, Scanner k) {
         P.println();
         P.println(contents[0], gn); // prompt
-        P.println("   [1]: " + contents[1]);
-        P.println("   [2]: " + contents[2]);
+        P.println("......[1]: " + contents[1]);
+        P.println("......[2]: " + contents[2]);
         if (promptForDetour(k)) {
             P.println(contents[3], gn);
             P.print("[press enter to say '" + acks[(int) (Math.random() * acks.length)] + "!'] ");
