@@ -1,13 +1,17 @@
 import java.util.Scanner;
+import java.util.ArrayList;
 import java.util.List;
 
 public final class Gameplay {
+    //
+    protected static ArrayList<Scenario> scenarios;
     private Scanner k = new Scanner(System.in);
     private final String gn = Micromanager.guide;
     private final String pn = Micromanager.playerName;
 
     protected Gameplay() {
-        for (Scenario s : Micromanager.scenarios) {
+        scenarios = R.getScenariosJSON();
+        for (Scenario s : scenarios) {
             Success.nextMonth();
             runScenario(s);
         }

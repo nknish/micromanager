@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public final class Micromanager {
@@ -15,12 +14,8 @@ public final class Micromanager {
     protected static String playerName = "you";
     protected static String guide = "chuck";
 
-    // scenarios (in order)
-    protected static ArrayList<Scenario> scenarios;
-
     public static void main(String[] args) {
         new Intro();
-        new Setup();
         new Gameplay();
         mainLoop(); // runs through the whole game
         results(); // the player sees how they did!
