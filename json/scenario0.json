@@ -1,7 +1,7 @@
 {
     "prompt": "It's your first day as a grid manager. What is your priority?",
     "responses": {
-        "yay climate change stuff": [
+        "[1] yay climate change stuff": [
             {                
                 "result": "the greens luv u",
                 "odds": 1,
@@ -12,7 +12,7 @@
                 "dMoney": 0
             }
         ],
-        "yay nature stuff": [
+        "[2] yay nature stuff": [
             {
                 "result": "the local greens luv u a lot",
                 "odds": 1,
@@ -23,7 +23,7 @@
                 "dMoney": 0
             }
         ],
-        "yay cheap energy": [
+        "[3] yay cheap energy": [
             {
                 "result": "the consumers are happy af",
                 "odds": 1,
@@ -34,7 +34,7 @@
                 "dMoney": 0
             }
         ],
-        "yay no power outages": [
+        "[4] yay no power outages": [
             {
                 "result": "everyone is pretty stoked",
                 "odds": 1,
@@ -45,7 +45,7 @@
                 "dMoney": 0
             }
         ],
-        "promise to listen to 'all voices'": [
+        "[5] promise to listen to 'all voices'": [
             {
                 "result": "lobbyists are hyped",
                 "odds": 1,

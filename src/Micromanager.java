@@ -21,6 +21,7 @@ public final class Micromanager {
     public static void main(String[] args) {
         new Intro();
         new Setup();
+        new Gameplay();
         mainLoop(); // runs through the whole game
         results(); // the player sees how they did!
         outro(); // gives some closing information, allows them to start over?
