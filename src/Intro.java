@@ -53,6 +53,7 @@ public final class Intro {
      */
 
     protected Intro() {
+        P.clear();
         getStatementOrStart();
         getNameAndTown();
         doInfoSession();
@@ -60,7 +61,6 @@ public final class Intro {
     }
 
     private void getStatementOrStart() {
-        P.clear();
         while (true) {
             P.println("press [p] to play, or [s] to read statement, then press [enter]", "system");
             P.print("", "you");

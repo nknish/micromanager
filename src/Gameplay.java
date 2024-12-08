@@ -3,13 +3,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 public final class Gameplay {
-    //
-    protected static ArrayList<Scenario> scenarios;
+    // all of the scenarios, parsed from JSON!
+    private static ArrayList<Scenario> scenarios;
+
+    // scanner to take input
     private Scanner k = new Scanner(System.in);
+
+    // names of thingies
     private final String gn = Micromanager.guide;
     private final String pn = Micromanager.playerName;
 
     protected Gameplay() {
+        P.clear();
         scenarios = R.getScenariosJSON();
         for (Scenario s : scenarios) {
             Success.nextMonth();
