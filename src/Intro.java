@@ -102,7 +102,7 @@ public final class Intro {
             P.println("whoa, hold on there. we have the same name! that might get confusing.", gn);
             P.println("hmm.......what to do, what to do?", gn);
             P.println("...i know! i'll just change my name!", gn);
-            Micromanager.guide = "jeremiah";
+            Micromanager.guide = "bub";
             gn = Micromanager.guide;
             P.println();
             P.println("...............................................................................");
