@@ -42,8 +42,7 @@ public final class P {
     }
 
     protected static void print(String s, String voice) {
-        print("[" + voice + "] - ");
-        print(s);
+        print("[" + voice + "] - " + s);
     }
 
     protected static void println() {
