@@ -8,8 +8,7 @@
                 "oddsBooster": "none",
                 "dCli": 10,
                 "dCon": 5,
-                "dCiv": 5,
-                "dMoney": 0
+                "dCiv": 5
             }
         ],
         "[2] the natural beauty of our town is unique...we'll fight to protect it!": [
@@ -19,8 +18,7 @@
                 "oddsBooster": "none",
                 "dCli": 8,
                 "dCon": 3,
-                "dCiv": 5,
-                "dMoney": 0
+                "dCiv": 5
             }
         ],
         "[3] nothing matters more to us than low energy costs!": [
@@ -30,8 +28,7 @@
                 "oddsBooster": "none",
                 "dCli": 4,
                 "dCon": 10,
-                "dCiv": 8,
-                "dMoney": 0
+                "dCiv": 8
             }
         ],
         "[4] we're focusing on our most basic task: preventing power outages!": [
@@ -41,8 +38,7 @@
                 "oddsBooster": "none",
                 "dCli": 6,
                 "dCon": 9,
-                "dCiv": 9,
-                "dMoney": 0
+                "dCiv": 9
             }
         ],
         "[5] we commit to helping our beloved businesses thrive!": [
@@ -52,8 +48,7 @@
                 "oddsBooster": "none",
                 "dCli": 2,
                 "dCon": 6,
-                "dCiv": 7,
-                "dMoney": 0
+                "dCiv": 7
             }
         ]
     },

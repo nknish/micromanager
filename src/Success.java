@@ -2,7 +2,6 @@ public final class Success {
     private static int cli = 0; // climate score
     private static int con = 0; // consumer score
     private static int civ = 0; // civic score
-    private static int money = 1000000; // money in the bank!
     private static int month = 0; // month (0 is intro, 13 is the end of the game)
 
     /*
@@ -38,14 +37,6 @@ public final class Success {
         if (month == 0)
             return 0; // for 'month 0', aka before the start
         return score * 12 / month; // for during the game, calculate predicted total score
-    }
-
-    public static int getMoney() {
-        return money;
-    }
-
-    public static void setMoney(int money) {
-        Success.money = money;
     }
 
     public static int getMonth() {

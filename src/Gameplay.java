@@ -158,7 +158,6 @@ public final class Gameplay {
     private void handleOutcome(Scenario.Outcome o) {
         // calculate success metrics
         Success.updateScores(o.dCli, o.dCon, o.dCiv);
-        Success.setMoney(Success.getMoney() + o.dMoney);
 
         // tell the player what happened
         P.println(o.result, gn);
