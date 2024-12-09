@@ -1,70 +1,40 @@
 {
-    "prompt": "introducing the scenario!",
+    "prompt": "well boss, the leaves are changing color, and our city council is changing too. with elections coming up, some councilmembers are trying to get through one last piece of popular legislation before the voters speak their minds. in particular, they're hoping to pass an ambitious new greenhouse gas emissions target that may increase energy prices over the next ten years, in exchange for great results on climate.\n\nthe bill just barely passed the counciil, and now it's on the mayor's desk and it's your last chance to weigh in. what position should we take?",
     "responses": {
-        "[1] option 1 response": [
+        "[1] we need to protect the environment, so sign it!": [
             {                
-                "result": "this is the more frequent outcome (odds must add up to 1)",
-                "odds": 0.8,
-                "oddsBooster": "none",
-                "dCli": 5,
-                "dCon": 5,
-                "dCiv": 5
-            },
-            {                
-                "result": "this one happens every once in a while!",
-                "odds": 0.2,
-                "oddsBooster": "none",
+                "result": "the mayor values your opinion, and he's going to sign it! we'll leave a lasting legacy of standing up against climate change, and hopefully the public will see that.",
+                "odds": 0.6,
+                "oddsBooster": "civ",
                 "dCli": 10,
-                "dCon": 10,
-                "dCiv": 10
-            }
-        ],
-        "[2] option 2 response": [
-            {
-                "result": "50/50 chance in normal circumstances",
-                "odds": 0.5,
-                "oddsBooster": "none",
-                "dCli": 5,
-                "dCon": 5,
-                "dCiv": 5
+                "dCon": 6,
+                "dCiv": 8
             },
-            {
-                "result": "this one's way more likely if you have a good climate score!",
-                "odds": 0.5,
-                "oddsBooster": "cli",
-                "dCli": 5,
-                "dCon": 5,
-                "dCiv": 5
-            }
-        ],
-        "[3] option 3 response": [
-            {
-                "result": "guide's response to your choice",
-                "odds": 1,
+            {                
+                "result": "rats...it looks like the mayor vetoed it without asking us. we missed a good opportunity to fight climate change, but at least we'll keep energy prices lower.",
+                "odds": 0.4,
                 "oddsBooster": "none",
                 "dCli": 5,
-                "dCon": 5,
-                "dCiv": 5
+                "dCon": 7,
+                "dCiv": 3
             }
         ],
-        "[4] option 4 response": [
-            {
-                "result": "guide's response to your choice",
-                "odds": 1,
+        "[2] it's too costly to consumers, and the mayor shouldn't sign it.": [
+            {                
+                "result": "the mayor values your opinion, and he's going to veto it! we're going to keep energy prices down. however, we can't give up on climate action in the future.",
+                "odds": 0.6,
+                "oddsBooster": "civ",
+                "dCli": 2,
+                "dCon": 8,
+                "dCiv": 8
+            },
+            {                
+                "result": "rats...it looks like the mayor signed it without asking us. we won't get much credit for this climate achievement, but at least we also won't get blamed for an increase in energy prices...",
+                "odds": 0.4,
                 "oddsBooster": "none",
-                "dCli": 5,
-                "dCon": 5,
-                "dCiv": 5
-            }
-        ],
-        "[5] option 5 response": [
-            {
-                "result": "guide's response to your choice",
-                "odds": 1,
-                "oddsBooster": "none",
-                "dCli": 5,
-                "dCon": 5,
-                "dCiv": 5
+                "dCli": 4,
+                "dCon": 6,
+                "dCiv": 3
             }
         ]
     },
