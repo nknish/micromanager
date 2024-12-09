@@ -87,7 +87,7 @@ public final class Intro {
         // get player name
         P.println();
         while (true) {
-            P.println("hey! welcome to micromanager! what's your name?", gn);
+            P.println("hey! you're the new micromanager--err, microgrid manager! what's your name?", gn);
             P.print("", "you");
             pn = k.nextLine().strip().toLowerCase();
             if (!pn.equals("")) {
@@ -97,12 +97,11 @@ public final class Intro {
         }
 
         // make sure the names are different
-        String namePrompt = "cool. nice to meet you, " + pn + "! what do you want your town to be called?";
         if (pn.equals(gn)) {
             P.println("whoa, hold on there. we have the same name! that might get confusing.", gn);
             P.println("hmm.......what to do, what to do?", gn);
             P.println("...i know! i'll just change my name!", gn);
-            Micromanager.guide = "bub";
+            Micromanager.guide = "dez";
             gn = Micromanager.guide;
             P.println();
             P.println("...............................................................................");
@@ -111,19 +110,23 @@ public final class Intro {
             P.print("[press enter to compliment " + gn + " on his new name] ");
             k.nextLine();
             P.println("why, thank you! anyways, back to business.", gn);
-            P.println();
-            namePrompt = "so, " + pn + ", what do you want your town to be called?";
+        } else {
+            P.println("cool. nice to meet you, " + pn + "!", gn);
         }
+        P.println();
 
         // get town name
+        P.println("...i'm feeling forgetful today. can you remind me the name of this town?", gn);
         while (true) {
-            P.println(namePrompt, gn);
             P.print("", pn);
             tn = k.nextLine().strip().toLowerCase();
             if (!tn.equals("")) {
                 Micromanager.townName = tn;
                 break;
             }
+            P.println(
+                    "oh...you're not sure either? well in that case, why don't you just pick a new name? go for it, let's hear your best idea!",
+                    gn);
         }
 
         // wrap up the greeting, get to details
