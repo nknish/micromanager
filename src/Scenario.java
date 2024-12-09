@@ -11,6 +11,7 @@ import java.util.HashMap;
 public class Scenario {
     public String prompt;
     public HashMap<String, List<Outcome>> responses;
+    public String ending;
 
     /**
      * An outcome, selected from a list, depending on the choice of the player for

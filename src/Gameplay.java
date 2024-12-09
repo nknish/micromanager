@@ -32,6 +32,9 @@ public final class Gameplay {
 
             // print results and update them on the backend
             handleOutcome(outcome);
+
+            // display the ending, wait to proceed to next month until they're ready
+            endScenario(s.ending);
         }
     }
 
@@ -39,7 +42,7 @@ public final class Gameplay {
         P.clear();
         Success.nextMonth();
         String line = "*******************************************************************************";
-        String m = "  " + months[(Success.getMonth() + 4) % 12] + "  ";
+        String m = "  " + getMonth(0) + "  ";
         String s = "";
         while (s.length() < m.length()) {
             s = s + " ";
@@ -167,5 +170,16 @@ public final class Gameplay {
         P.println("......climate-friendliness score: " + Success.getCli());
         P.println("......consumer happiness score: " + Success.getCon());
         P.println("......civic engagement score: " + Success.getCiv());
+    }
+
+    private void endScenario(String s) {
+        P.println();
+        P.println(s, gn);
+        P.print("[press enter to move on from " + getMonth(0) + " to " + getMonth(1) + "] ");
+        k.nextLine();
+    }
+
+    private String getMonth(int offset) {
+        return months[(Success.getMonth() + 2 + offset) % 12];
     }
 }
