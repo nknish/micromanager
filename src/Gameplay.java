@@ -4,7 +4,7 @@ import java.util.List;
 
 public final class Gameplay {
     // all of the scenarios, parsed from JSON!
-    private static ArrayList<Scenario> scenarios;
+    private final ArrayList<Scenario> scenarios = R.getScenariosJSON();
 
     // scanner to take input
     private Scanner k = new Scanner(System.in);
@@ -16,7 +16,6 @@ public final class Gameplay {
             "september", "october", "november", "december" };
 
     protected Gameplay() {
-        scenarios = R.getScenariosJSON();
         for (Scenario s : scenarios) {
             // pretty print the month design, increment the month variable
             nextMonth();
@@ -169,18 +168,18 @@ public final class Gameplay {
         P.println();
         P.println("here's how you did on all key metrics:", gn);
         P.println("......climate-friendliness score: " + o.dCli + "/10");
-        P.println("......consumer happiness score: " + o.dCon + "/10");
-        P.println("......civic engagement score: " + o.dCiv + "/10");
+        P.println("........consumer happiness score: " + o.dCon + "/10");
+        P.println("..........civic engagement score: " + o.dCiv + "/10");
         P.println("and here are your total scores:", gn);
         P.println("......climate-friendliness score: " + Success.getCli());
-        P.println("......consumer happiness score: " + Success.getCon());
-        P.println("......civic engagement score: " + Success.getCiv());
+        P.println("........consumer happiness score: " + Success.getCon());
+        P.println("..........civic engagement score: " + Success.getCiv());
     }
 
     private void endScenario(String s) {
         P.println();
         P.println(s, gn);
-        P.print("[press enter to move on from " + getMonth(0) + " to " + getMonth(1) + "] ");
+        P.print("[press enter to proceed from " + getMonth(0) + " to " + getMonth(1) + "] ");
         k.nextLine();
     }
 
