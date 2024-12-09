@@ -18,8 +18,20 @@ public final class Gameplay {
     protected Gameplay() {
         scenarios = R.getScenariosJSON();
         for (Scenario s : scenarios) {
+            // pretty print the month design, increment the month variable
             nextMonth();
-            runScenario(s);
+
+            // print out context, provide options, store those options for the next part
+            String[] responsesWithIndices = printScenarioAndReturnPossibleResponses(s);
+
+            // take player's response, grab the possible outcomes for that response
+            List<Scenario.Outcome> outcomes = getResponseAndItsPossibleOutcomes(s, responsesWithIndices);
+
+            // see how lucky they are! pick one outcome of (possibly) multiple
+            Scenario.Outcome outcome = rollDice(outcomes);
+
+            // print results and update them on the backend
+            handleOutcome(outcome);
         }
     }
 
@@ -27,7 +39,6 @@ public final class Gameplay {
         P.clear();
         Success.nextMonth();
         String line = "*******************************************************************************";
-
         String m = "  " + months[(Success.getMonth() + 4) % 12] + "  ";
         String s = "";
         while (s.length() < m.length()) {
@@ -53,13 +64,7 @@ public final class Gameplay {
         System.out.println(s);
         System.out.println(line);
         System.out.println(line);
-    }
-
-    private void runScenario(Scenario s) {
-        String[] responsesWithIndices = printScenarioAndReturnPossibleResponses(s);
-        List<Scenario.Outcome> outcomes = getResponseAndItsPossibleOutcomes(s, responsesWithIndices);
-        Scenario.Outcome outcome = rollDice(outcomes);
-        handleOutcome(outcome);
+        P.println();
     }
 
     private String[] printScenarioAndReturnPossibleResponses(Scenario s) {
