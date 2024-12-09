@@ -150,7 +150,7 @@ public final class Intro {
             return;
 
         P.println();
-        P.println("that's all i've got for now!", gn);
+        P.println("that's all i've got for now! are you ready to run the grid?", gn);
         P.println("......[1]: wait...can we start over?");
         P.println("......[2]: i'm ready to go!");
         if (promptForDetour(k)) {
