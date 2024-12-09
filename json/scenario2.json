@@ -1,72 +1,99 @@
 {
-    "prompt": "introducing the scenario!",
+    "prompt": "wow, what a beautiful day it is today, boss! the sun is shining and our local solar plants, plus the rooftop rigs on some folks' homes, are generating lots of energy. it looks like we won't have to buy any power at all from our neighbor the coal plant this month, which mean's we'll be saving some money.\n\nyou've got a big opportunity to make a splash here, depending on how you spend our surplus. what's the plan?",
     "responses": {
-        "[1] option 1 response": [
+        "[1] we know what our townspeople wants: let's lower prices.": [
             {                
-                "result": "this is the more frequent outcome (odds must add up to 1)",
+                "result": "solid pick, boss. i'll send the memo! nothing like lower energy prices to boost your mood while you crank the air conditioner up...",
                 "odds": 0.8,
                 "oddsBooster": "none",
-                "dCli": 5,
-                "dCon": 5,
+                "dCli": 4,
+                "dCon": 8,
                 "dCiv": 5
             },
             {                
-                "result": "this one happens every once in a while!",
+                "result": "solid pick, boss. i'll send the memo! nothing like lower energy prices to boost your mood while you crank the air conditioner up...",
                 "odds": 0.2,
                 "oddsBooster": "none",
-                "dCli": 10,
+                "dCli": 2,
                 "dCon": 10,
-                "dCiv": 10
+                "dCiv": 5
             }
         ],
-        "[2] option 2 response": [
+        "[2] our ancient power lines could use some work, don't you think?": [
             {
-                "result": "50/50 chance in normal circumstances",
+                "result": "that's smart, boss! i'll shoot a text to our local construction crew. this could really help us out later...",
                 "odds": 0.5,
                 "oddsBooster": "none",
-                "dCli": 5,
-                "dCon": 5,
-                "dCiv": 5
+                "dCli": 7,
+                "dCon": 6,
+                "dCiv": 7,
+                "special": "repair" 
             },
             {
-                "result": "this one's way more likely if you have a good climate score!",
+                "result": "great choice, boss! we can even upgrade to some more energy-efficient stuff. i think we'll be glad we did this later...",
                 "odds": 0.5,
-                "oddsBooster": "cli",
-                "dCli": 5,
-                "dCon": 5,
-                "dCiv": 5
+                "oddsBooster": "none",
+                "dCli": 8,
+                "dCon": 6,
+                "dCiv": 7,
+                "special": "repair"
             }
         ],
-        "[3] option 3 response": [
+        "[3] hmmm...how about we save it for a rainy (or stormy) day?": [
             {
-                "result": "guide's response to your choice",
+                "result": "well aren't you forward-thinking today, boss? i think folks will appreciate your pragmatism, and it may come in handy later...",
                 "odds": 1,
                 "oddsBooster": "none",
                 "dCli": 5,
-                "dCon": 5,
-                "dCiv": 5
+                "dCon": 7,
+                "dCiv": 8,
+                "special": "save"
             }
         ],
-        "[4] option 4 response": [
+        "[4] let's give out grants to make homes more energy-efficient.": [
             {
-                "result": "guide's response to your choice",
-                "odds": 1,
+                "result": "boss, you sure are clever! i think everyone will lo-o-ove this. i sure hope we won't need this money later, though...",
+                "odds": 0.7,
                 "oddsBooster": "none",
-                "dCli": 5,
-                "dCon": 5,
-                "dCiv": 5
+                "dCli": 10,
+                "dCon": 8,
+                "dCiv": 8
+            },
+            {
+                "result": "boss, you sure are clever! i think this will pay off in the long run. i sure hope we won't need this money later, though...",
+                "odds": 0.3,
+                "oddsBooster": "none",
+                "dCli": 9,
+                "dCon": 7,
+                "dCiv": 8
             }
         ],
-        "[5] option 5 response": [
+        "[5] i sure could use a fancy meal...toss some cash to the local businesses!": [
             {
-                "result": "guide's response to your choice",
-                "odds": 1,
+                "result": "hmm. ok. i guess you could do that. i'll let them know, and hopefully the townsfolk don't get word of this.",
+                "odds": 0.4,
                 "oddsBooster": "none",
-                "dCli": 5,
+                "dCli": 2,
                 "dCon": 5,
-                "dCiv": 5
+                "dCiv": 9
+            },
+            {
+                "result": "wow! the townspeople sure are gonna hate you...sure hope you enjoy the filet mignon though. i'll send the money right over.",
+                "odds": 0.4,
+                "oddsBooster": "none",
+                "dCli": 2,
+                "dCon": 2,
+                "dCiv": 10
+            },
+            {
+                "result": "if you're trying to start a revolution, boss, you sure know how to do it. the business folks are decently happy, but you've enraged pretty much everyone else.",
+                "odds": 0.2,
+                "oddsBooster": "none",
+                "dCli": 3,
+                "dCon": 0,
+                "dCiv": 10
             }
         ]
     },
-    "ending": "close up the storyline"
+    "ending": "boy does it feel good to have some extra cash. i love summer! i hope you enjoy the calm while it lasts, boss, because it isn't all sunshine and rainbows all year. in the fall, we might face some pretty bad storms, and in the winter, we'll lose out on a lot of our solar power capacity. anyways...see you tomorrow!"
 }

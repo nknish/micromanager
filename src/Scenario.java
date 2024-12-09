@@ -27,5 +27,6 @@ public class Scenario {
         public int dCli;
         public int dCon;
         public int dCiv;
+        public String special;
     }
 }
