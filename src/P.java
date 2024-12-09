@@ -63,12 +63,6 @@ public final class P {
         println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
     }
 
-    // a nice chill, friendly exit
-    protected static void quit() {
-        println("thanks for playing! bye now");
-        System.exit(1);
-    }
-
     // non-instantiable
     private P() {
     }

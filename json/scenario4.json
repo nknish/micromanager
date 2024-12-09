@@ -1,66 +1,120 @@
 {
-    "prompt": "introducing the scenario!",
+    "prompt": "a letter just came in from the mayor, boss! he's applying for a grant from a new federal government program, and they've got some big bucks. it's called the inflation reduction act (for some reason) and they put aside special funds for microgrids. isn't that nice?\n\nwe've got to give the mayor our most compelling reason, based on our past achievements, why we should get this grant. what should we highlight?",
     "responses": {
-        "[1] option 1 response": [
+        "[1] our achievements on climate action!": [
             {                
-                "result": "this is the more frequent outcome (odds must add up to 1)",
-                "odds": 0.8,
+                "result": "...\n...\n...\n...[imagine time passing]...\n...\n...\n...wow! we got the full grant! what an amazing outcome, and it's all thanks to our strong action on climate. we did it, boss.",
+                "odds": 0.1,
+                "oddsBooster": "cli",
+                "dCli": 10,
+                "dCon": 9,
+                "dCiv": 9
+            },
+            {                
+                "result": "...\n...\n...\n...[imagine time passing]...\n...\n...\n...hey! great news! we didn't get the full grant, but we still received a good chunk of money. not too bad, if you ask me.",
+                "odds": 0.15,
+                "oddsBooster": "cli",
+                "dCli": 9,
+                "dCon": 7,
+                "dCiv": 7
+            },
+            {                
+                "result": "...\n...\n...\n...[imagine time passing]...\n...\n...\n...welp, turns out we didn't get the grant, but that's ok! we live to provide power for another day.",
+                "odds": 0.75,
                 "oddsBooster": "none",
                 "dCli": 5,
                 "dCon": 5,
                 "dCiv": 5
+            }
+        ],
+        "[2] our popularity among customers!": [
+            {                
+                "result": "...\n...\n...\n...[imagine time passing]...\n...\n...\n...wow! we got the full grant! what an amazing outcome, and it's all thanks to our great relationship with the people in this town. we did it, boss.",
+                "odds": 0.1,
+                "oddsBooster": "con",
+                "dCli": 9,
+                "dCon": 10,
+                "dCiv": 9
             },
             {                
-                "result": "this one happens every once in a while!",
-                "odds": 0.2,
+                "result": "...\n...\n...\n...[imagine time passing]...\n...\n...\n...hey! great news! we didn't get the full grant, but we still received a good chunk of money. not too bad, if you ask me.",
+                "odds": 0.15,
+                "oddsBooster": "con",
+                "dCli": 7,
+                "dCon": 9,
+                "dCiv": 7
+            },
+            {                
+                "result": "...\n...\n...\n...[imagine time passing]...\n...\n...\n...welp, turns out we didn't get the grant, but that's ok! we live to provide power for another day.",
+                "odds": 0.75,
                 "oddsBooster": "none",
+                "dCli": 5,
+                "dCon": 5,
+                "dCiv": 5
+            }
+        ],
+        "[3] our positive relationships with civic organizations!": [
+            {                
+                "result": "...\n...\n...\n...[imagine time passing]...\n...\n...\n...wow! we got the full grant! what an amazing outcome, and it's all thanks to our amazing work with the business community, environmental organizations, and our local politicians. we did it, boss.",
+                "odds": 0.1,
+                "oddsBooster": "civ",
+                "dCli": 9,
+                "dCon": 9,
+                "dCiv": 10
+            },
+            {                
+                "result": "...\n...\n...\n...[imagine time passing]...\n...\n...\n...hey! great news! we didn't get the full grant, but we still received a good chunk of money. not too bad, if you ask me.",
+                "odds": 0.15,
+                "oddsBooster": "civ",
+                "dCli": 7,
+                "dCon": 7,
+                "dCiv": 9
+            },
+            {                
+                "result": "...\n...\n...\n...[imagine time passing]...\n...\n...\n...welp, turns out we didn't get the grant, but that's ok! we live to provide power for another day.",
+                "odds": 0.75,
+                "oddsBooster": "none",
+                "dCli": 5,
+                "dCon": 5,
+                "dCiv": 5
+            }
+        ],
+        "[4] our well-rounded, holistic approach!": [
+            {                
+                "result": "...\n...\n...\n...[imagine time passing]...\n...\n...\n...wow! we got the full grant! what an amazing outcome, and it's all thanks to our well-rounded work that's loved by many. we did it, boss.",
+                "odds": 0.03,
+                "oddsBooster": "cli",
                 "dCli": 10,
                 "dCon": 10,
                 "dCiv": 10
-            }
-        ],
-        "[2] option 2 response": [
-            {
-                "result": "50/50 chance in normal circumstances",
-                "odds": 0.5,
-                "oddsBooster": "none",
-                "dCli": 5,
-                "dCon": 5,
-                "dCiv": 5
             },
-            {
-                "result": "this one's way more likely if you have a good climate score!",
-                "odds": 0.5,
-                "oddsBooster": "cli",
-                "dCli": 5,
-                "dCon": 5,
-                "dCiv": 5
-            }
-        ],
-        "[3] option 3 response": [
-            {
-                "result": "guide's response to your choice",
-                "odds": 1,
+            {                
+                "result": "...\n...\n...\n...[imagine time passing]...\n...\n...\n...wow! we got the full grant! what an amazing outcome, and it's all thanks to our well-rounded work that's loved by many. we did it, boss.",
+                "odds": 0.03,
+                "oddsBooster": "con",
+                "dCli": 10,
+                "dCon": 10,
+                "dCiv": 10
+            },
+            {                
+                "result": "...\n...\n...\n...[imagine time passing]...\n...\n...\n...wow! we got the full grant! what an amazing outcome, and it's all thanks to our well-rounded work that's loved by many. we did it, boss.",
+                "odds": 0.03,
+                "oddsBooster": "civ",
+                "dCli": 10,
+                "dCon": 10,
+                "dCiv": 10
+            },
+            {                
+                "result": "...\n...\n...\n...[imagine time passing]...\n...\n...\n...hey! great news! we didn't get the full grant, but we still received a good chunk of money. not too bad, if you ask me.",
+                "odds": 0.16,
                 "oddsBooster": "none",
-                "dCli": 5,
-                "dCon": 5,
-                "dCiv": 5
-            }
-        ],
-        "[4] option 4 response": [
-            {
-                "result": "guide's response to your choice",
-                "odds": 1,
-                "oddsBooster": "none",
-                "dCli": 5,
-                "dCon": 5,
-                "dCiv": 5
-            }
-        ],
-        "[5] option 5 response": [
-            {
-                "result": "guide's response to your choice",
-                "odds": 1,
+                "dCli": 8,
+                "dCon": 8,
+                "dCiv": 8
+            },
+            {                
+                "result": "...\n...\n...\n...[imagine time passing]...\n...\n...\n...welp, turns out we didn't get the grant, but that's ok! we live to provide power for another day.",
+                "odds": 0.75,
                 "oddsBooster": "none",
                 "dCli": 5,
                 "dCon": 5,
@@ -68,5 +122,5 @@
             }
         ]
     },
-    "ending": "close up the storyline"
+    "ending": "boss, i'm glad you got a taste of the process of applying for federal grants. it can be pretty lucrative, and when the federal government does things right, it can greatly benefit communities across the country. on the other hand, there's a lot of red tape and challenges that make it hard. it's pretty nice when the government feels like it's on our side, though. anyways, i've gotta get going. see ya next time!"
 }
