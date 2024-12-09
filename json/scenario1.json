@@ -1,72 +1,72 @@
 {
-    "prompt": "introducing the scenario!",
+    "prompt": "welp, it's been only a few weeks and things are already moving fast! the power lines are humming, emails are flying in and out, and we even printed some new microgrid merch...but you don't want to hear about all that. let's talk business:\n\nmildred, our local wind farm guy, wants to expand her operation and buy some land from our local grassland park. she says it'll help lower energy costs and fight climate change, but the environmental organizations aren't too keen on it. plus, the citizens of this town do love that grassland! what do you think we should do?",
     "responses": {
-        "[1] option 1 response": [
+        "[1] let's do it! sell half the park.": [
             {                
-                "result": "this is the more frequent outcome (odds must add up to 1)",
-                "odds": 0.8,
+                "result": "bold choice, boss! this may pay off in the long run, but in the meantime, you're gonna face off with some angry park-lovers. i hope you have a nice private space to walk your dog...",
+                "odds": 1,
                 "oddsBooster": "none",
-                "dCli": 5,
-                "dCon": 5,
-                "dCiv": 5
+                "dCli": 8,
+                "dCon": 3,
+                "dCiv": 4
+            }
+        ],
+        "[2] hmm...how about we sell her a smaller plot?": [
+            {
+                "result": "i think she'll be open to it! way to balance competing interests, boss. however, we will have to face this whole climate change issue eventually...",
+                "odds": 1,
+                "oddsBooster": "none",
+                "dCli": 4,
+                "dCon": 8,
+                "dCiv": 8
+            }
+        ],
+        "[3] i don't think so...let's try to help her find land elsewhere.": [
+            {
+                "result": "ooh, good thinking boss! i remember a local business fella mentioning he was selling 2-dozen acres on the outskirts of town. i'll put them in touch!",
+                "odds": 0.6,
+                "oddsBooster": "civ",
+                "dCli": 7,
+                "dCon": 7,
+                "dCiv": 7
             },
-            {                
-                "result": "this one happens every once in a while!",
-                "odds": 0.2,
+            {
+                "result": "i appreciate the sentiment, boss, but that's awful optimistic. she said she already scoured the town, and she may not be happy to hear that we won't help her out.",
+                "odds": 0.4,
                 "oddsBooster": "none",
-                "dCli": 10,
-                "dCon": 10,
+                "dCli": 3,
+                "dCon": 6,
+                "dCiv": 5
+            }
+        ],
+        "[4] no-can-do: the park is a staple of this town!": [
+            {
+                "result": "wow, a strong stance, boss! you may have angered an important ally in mildred, but it seems like the some of our key constituencies and interest groups will be ecstatic about this.",
+                "odds": 1,
+                "oddsBooster": "none",
+                "dCli": 3,
+                "dCon": 9,
+                "dCiv": 9
+            }
+        ],
+        "[5] let's see what the business and environment folks think...": [
+            {
+                "result": "consulting outside sources, boss? love to hear it. it seems like the business folks think the park brings in some decent tourism, and our environmental advocates have been working real hard to protect an endangered toad...let's protect this park!",
+                "odds": 0.7,
+                "oddsBooster": "none",
+                "dCli": 3,
+                "dCon": 9,
                 "dCiv": 10
-            }
-        ],
-        "[2] option 2 response": [
-            {
-                "result": "50/50 chance in normal circumstances",
-                "odds": 0.5,
-                "oddsBooster": "none",
-                "dCli": 5,
-                "dCon": 5,
-                "dCiv": 5
             },
             {
-                "result": "this one's way more likely if you have a good climate score!",
-                "odds": 0.5,
-                "oddsBooster": "cli",
-                "dCli": 5,
-                "dCon": 5,
-                "dCiv": 5
-            }
-        ],
-        "[3] option 3 response": [
-            {
-                "result": "guide's response to your choice",
-                "odds": 1,
+                "result": "this is a tough one, boss. the environmental folks love the park, but mildred is the president of the local business group! if we're listening to our local sources, we're gonna have to give her what she wants, and the greens may not take it too well...",
+                "odds": 0.3,
                 "oddsBooster": "none",
-                "dCli": 5,
-                "dCon": 5,
-                "dCiv": 5
-            }
-        ],
-        "[4] option 4 response": [
-            {
-                "result": "guide's response to your choice",
-                "odds": 1,
-                "oddsBooster": "none",
-                "dCli": 5,
-                "dCon": 5,
-                "dCiv": 5
-            }
-        ],
-        "[5] option 5 response": [
-            {
-                "result": "guide's response to your choice",
-                "odds": 1,
-                "oddsBooster": "none",
-                "dCli": 5,
-                "dCon": 5,
-                "dCiv": 5
+                "dCli": 8,
+                "dCon": 3,
+                "dCiv": 4
             }
         ]
     },
-    "ending": "close up the storyline"
+    "ending": "wow, that was a tough one! it can get real challenging to balance all of these competing interests. in the long run, you're gonna have to do a lot more juggling just like this: listening to the local environmental advocates and business leaders, keeping customers happy, and meeting our town's climate goals. way to stay cool under pressure, boss!"
 }
