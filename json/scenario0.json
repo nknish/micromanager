@@ -1,9 +1,9 @@
 {
-    "prompt": "it's your first day as a grid manager. What is your priority?",
+    "prompt": "wow! what a big day! your first day as our new, official microgrid manager. our grid may be micro, but i think our goals should be macro, don't you? anyways, a local reporter reached out to me: they want to know what our office's big priority will be in your first year on the job. what should i let them know?",
     "responses": {
-        "[1] yay climate change stuff": [
+        "[1] fighting climate change will be our number 1 priority!": [
             {                
-                "result": "the greens luv u",
+                "result": "alright! i'll send your statement right over. this will definitely go over well with the climate advocates and environment-conscious residents of our town. we'll see how everyone else takes it...",
                 "odds": 1,
                 "oddsBooster": "none",
                 "dCli": 10,
@@ -12,47 +12,47 @@
                 "dMoney": 0
             }
         ],
-        "[2] yay nature stuff": [
+        "[2] the natural beauty of our town is unique...we'll fight to protect it!": [
             {
-                "result": "the local greens luv u a lot",
+                "result": "wow...a little controversial right off the bat! you'll quickly make friends with the eco-friendly folks, but you may run into some issues with businesses, farmers, and folks who think you should be focused on lowering costs.",
                 "odds": 1,
                 "oddsBooster": "none",
-                "dCli": 0,
-                "dCon": 0,
-                "dCiv": 0,
+                "dCli": 8,
+                "dCon": 3,
+                "dCiv": 5,
                 "dMoney": 0
             }
         ],
-        "[3] yay cheap energy": [
+        "[3] nothing matters more to us than low energy costs!": [
             {
-                "result": "the consumers are happy af",
+                "result": "well, you sure know how to please a crowd! citizens, businesses, and pretty much everyone will be happy to hear that. you may have to work a little harder to win over the climate-conscious folks, though...",
                 "odds": 1,
                 "oddsBooster": "none",
-                "dCli": 0,
-                "dCon": 0,
-                "dCiv": 0,
+                "dCli": 4,
+                "dCon": 10,
+                "dCiv": 8,
                 "dMoney": 0
             }
         ],
-        "[4] yay no power outages": [
+        "[4] we're focusing on our most basic task: preventing power outages!": [
             {
-                "result": "everyone is pretty stoked",
+                "result": "sounds quite sensible! nothing says 'great microgrid' like preventing blackouts. i think you're off to a great start.",
                 "odds": 1,
                 "oddsBooster": "none",
-                "dCli": 0,
-                "dCon": 0,
-                "dCiv": 0,
+                "dCli": 6,
+                "dCon": 9,
+                "dCiv": 9,
                 "dMoney": 0
             }
         ],
-        "[5] promise to listen to 'all voices'": [
+        "[5] we commit to helping our beloved businesses thrive!": [
             {
-                "result": "lobbyists are hyped",
+                "result": "oooh...get ready to be treated to some fancy-schmancy dinners at our local french restaurant! our local politicians and business-owners will eat this up. you may have to work hard to win over the tree-huggers...",
                 "odds": 1,
                 "oddsBooster": "none",
-                "dCli": 0,
-                "dCon": 0,
-                "dCiv": 0,
+                "dCli": 2,
+                "dCon": 6,
+                "dCiv": 7,
                 "dMoney": 0
             }
         ]
