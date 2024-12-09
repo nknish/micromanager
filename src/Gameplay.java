@@ -179,6 +179,7 @@ public final class Gameplay {
     private void endScenario(String s) {
         P.println();
         P.println(s, gn);
+        P.println();
         P.print("[press enter to proceed from " + getMonth(0) + " to " + getMonth(1) + "] ");
         k.nextLine();
     }
