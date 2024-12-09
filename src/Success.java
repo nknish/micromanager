@@ -49,7 +49,7 @@ public final class Success {
     }
 
     public static int getMonth() {
-        return money;
+        return month;
     }
 
     public static void nextMonth() {
