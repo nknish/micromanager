@@ -9,8 +9,8 @@ public final class R {
     public static ArrayList<Scenario> getScenariosJSON() {
         Gson gson = new Gson();
         ArrayList<Scenario> scens = new ArrayList<Scenario>();
-        int noOfScenarios = 1;
-        for (int i = 0; i < noOfScenarios; i++) {
+        boolean nothingLeft = false;
+        for (int i = 0; !nothingLeft; i++) {
             File f = new File("../json/scenario" + i + ".json");
             String catchMessage = "uh oh, i can't read json and everything's broken";
             String json = getWholeFile(f, catchMessage);
@@ -19,7 +19,11 @@ public final class R {
                 json = getWholeFile(f, catchMessage);
             }
             if (json.equals(catchMessage)) {
-                throw new RuntimeException(catchMessage);
+                if (scens.size() == 0) {
+                    throw new RuntimeException(catchMessage);
+                } else {
+                    nothingLeft = true;
+                }
             } else {
                 scens.add(gson.fromJson(json, Scenario.class));
             }
