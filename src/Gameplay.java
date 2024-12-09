@@ -12,14 +12,47 @@ public final class Gameplay {
     // names of thingies
     private final String gn = Micromanager.guide;
     private final String pn = Micromanager.playerName;
+    private final String[] months = { "january", "february", "march", "april", "may", "june", "july", "august",
+            "september", "october", "november", "december" };
 
     protected Gameplay() {
-        P.clear();
         scenarios = R.getScenariosJSON();
         for (Scenario s : scenarios) {
-            Success.nextMonth();
+            nextMonth();
             runScenario(s);
         }
+    }
+
+    private void nextMonth() {
+        P.clear();
+        Success.nextMonth();
+        String line = "*******************************************************************************";
+
+        String m = "  " + months[(Success.getMonth() + 4) % 12] + "  ";
+        String s = "";
+        while (s.length() < m.length()) {
+            s = s + " ";
+        }
+        while (s.length() < line.length()) {
+            s = s + "*";
+            if (s.length() == line.length())
+                break;
+            s = "*" + s;
+        }
+        while (m.length() < line.length()) {
+            m = m + "*";
+            if (m.length() == line.length())
+                break;
+            m = "*" + m;
+        }
+
+        System.out.println(line);
+        System.out.println(line);
+        System.out.println(s);
+        System.out.println(m);
+        System.out.println(s);
+        System.out.println(line);
+        System.out.println(line);
     }
 
     private void runScenario(Scenario s) {
