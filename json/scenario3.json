@@ -1,72 +1,60 @@
 {
-    "prompt": "introducing the scenario!",
+    "prompt": "oh boy, boss, it's a good thing you're here! there's bad news down the road. raul, the fella from the town who runs a solar farm on his property, just called in and said his main transmission line connecting him to the grid is down. a massive tree fell right on top of it!\n\nthat's about 15% of our capacity for electricity at this time of year, which spells b-a-d-n-e-w-s. what now?",
     "responses": {
-        "[1] option 1 response": [
+        "[1] let's do everything we can to get than line back up ASAP": [
             {                
-                "result": "this is the more frequent outcome (odds must add up to 1)",
-                "odds": 0.8,
-                "oddsBooster": "none",
-                "dCli": 5,
-                "dCon": 5,
-                "dCiv": 5
+                "result": "ok, i'm calling raul...\n...\n...\n...just got off the phone. he says with our help, and our contacts in the construction business we should be back online in no time. great work!",
+                "odds": 0.3,
+                "oddsBooster": "civ",
+                "dCli": 9,
+                "dCon": 8,
+                "dCiv": 7
             },
             {                
-                "result": "this one happens every once in a while!",
-                "odds": 0.2,
+                "result": "ok, i'm calling raul...\n...\n...\n...raul says it's gonna take a pretty heavy lift. in the meantime, we're gonna have to take some hits: higher prices, and a lot of extra coal energy from our dirty and dependable neighbors at the power plant. you can't win 'em all.",
+                "odds": 0.55,
                 "oddsBooster": "none",
-                "dCli": 10,
-                "dCon": 10,
-                "dCiv": 10
+                "dCli": 4,
+                "dCon": 4,
+                "dCiv": 4
+            },
+            {                
+                "result": "ok, i'm calling raul...\n...\n...\n...oh gosh boss, this is pretty bad! raul's taking too long, we're dipping below the necessary supply. we've got no choice but to send out some temporary brownouts: that means that people all over town will have less power coming to their homes, but no one will run out entirely. let's hope we can sort this transmission line out soon.",
+                "odds": 0.15,
+                "oddsBooster": "none",
+                "dCli": 7,
+                "dCon": 0,
+                "dCiv": 2
             }
         ],
-        "[2] option 2 response": [
+        "[2] can we negotiate a temporary discount with the coal plant?": [
             {
-                "result": "50/50 chance in normal circumstances",
+                "result": "ok, let me call the plant...\n...\n...\n...we've got a deal! this is gonna hurt our climate goals, but it's not like we've got so many options.",
                 "odds": 0.5,
                 "oddsBooster": "none",
-                "dCli": 5,
-                "dCon": 5,
-                "dCiv": 5
+                "dCli": 0,
+                "dCon": 7,
+                "dCiv": 8
             },
             {
-                "result": "this one's way more likely if you have a good climate score!",
+                "result": "ok, let me call the plant...\n...\n...\n...it's not looking good, boss. they're charging extra because of the increase in demand, and it looks like we'll just have to pass along those high prices to our town. rats.",
                 "odds": 0.5,
                 "oddsBooster": "cli",
-                "dCli": 5,
-                "dCon": 5,
-                "dCiv": 5
+                "dCli": 3,
+                "dCon": 2,
+                "dCiv": 3
             }
         ],
-        "[3] option 3 response": [
+        "[3] there's no way around it: we have to cut our energy usage until this is fixed": [
             {
-                "result": "guide's response to your choice",
+                "result": "you're right. i'll send out a press release asking our good-natured townsfolk to keep the lights low, the air conditioning off, and the laundry for another day. in the meantime, we will have to raise prices as well to make sure the demand comes down enough. it's not ideal, but it's what we've gotta do.",
                 "odds": 1,
                 "oddsBooster": "none",
-                "dCli": 5,
-                "dCon": 5,
-                "dCiv": 5
-            }
-        ],
-        "[4] option 4 response": [
-            {
-                "result": "guide's response to your choice",
-                "odds": 1,
-                "oddsBooster": "none",
-                "dCli": 5,
-                "dCon": 5,
-                "dCiv": 5
-            }
-        ],
-        "[5] option 5 response": [
-            {
-                "result": "guide's response to your choice",
-                "odds": 1,
-                "oddsBooster": "none",
-                "dCli": 5,
+                "dCli": 3,
                 "dCon": 5,
                 "dCiv": 5
             }
         ]
     },
-    "ending": "close up the storyline"
+    "ending": "man, what a rough day. the grid business isn't easy, that's for sure, but that's why it's so important. no matter what we do, we'll always have to face challenges with infrastructure, weather, and unexpected events. the important thing is to stay prepared, be resilient, and learn from every experience!"
 }
