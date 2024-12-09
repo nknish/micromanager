@@ -73,6 +73,7 @@ public final class Gameplay {
     private String[] printScenarioAndReturnPossibleResponses(Scenario s) {
         // prompt
         P.println(s.prompt, gn);
+        P.println();
         if (s.responses.size() == 2) {
             P.println("you only have two choices:", gn);
         } else {
@@ -102,15 +103,18 @@ public final class Gameplay {
         while (true) {
             P.print("", pn);
             String userInput = k.nextLine().strip();
+            String failMessage = "invalid input...try again";
             try {
                 responseNumber = Integer.parseInt(userInput);
                 if (responseNumber == 0)
                     throw new IndexOutOfBoundsException();
                 return s.responses.get(responses[responseNumber]);
             } catch (NumberFormatException e) { // response is not an integer
+                failMessage = "try again. make sure you're just entering a number!";
             } catch (IndexOutOfBoundsException e) { // response is out of bounds
+                failMessage = "try again. make sure you only choose one of the numbers listed above!";
             }
-            P.println("try again. enter a number from the options above!", gn);
+            P.println(failMessage, gn);
         }
     }
 
@@ -160,7 +164,9 @@ public final class Gameplay {
         Success.updateScores(o.dCli, o.dCon, o.dCiv);
 
         // tell the player what happened
+        P.println();
         P.println(o.result, gn);
+        P.println();
         P.println("here's how you did on all key metrics:", gn);
         P.println("......climate-friendliness score: " + o.dCli + "/10");
         P.println("......consumer happiness score: " + o.dCon + "/10");
