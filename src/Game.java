@@ -15,6 +15,7 @@ public final class Game {
     private final String tn = Micromanager.townName;
     private final String[] months = { "january", "february", "march", "april", "may", "june", "july", "august",
             "september", "october", "november", "december" };
+    private final String[] adjectives = { "lovely", "quaint", "charming", "sweet", "peaceful", "cozy", "idyllic" };
 
     protected Game() {
         for (Scenario s : scenarios) {
@@ -68,7 +69,7 @@ public final class Game {
         System.out.println(line);
         System.out.println(line);
         P.println();
-        P.println("\t...in the lovely little town of " + tn);
+        P.println("\t...in the " + adjectives[(int) (Math.random() * adjectives.length)] + " little town of " + tn);
         P.println();
     }
 
