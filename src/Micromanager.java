@@ -3,13 +3,17 @@ public final class Micromanager {
     protected static String townName;
     protected static String playerName = "you";
     protected static String guide = "bub";
+    protected static boolean playAgain = false;
 
     public static void main(String[] args) {
-        new Intro();
-        new Gameplay();
-        // outro
-        // results
-        // quit
+        while (true) {
+            new Intro();
+            new Gameplay();
+            new Result();
+            if (!playAgain)
+                break;
+        }
+        new Outro();
     }
 
     // non-instantiable

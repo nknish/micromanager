@@ -188,6 +188,8 @@ public final class Gameplay {
 
     private void endScenario(String s) {
         P.println();
+        if (s.equals(""))
+            return;
         P.println(s, gn);
         P.println();
         P.print("[press enter to proceed from " + getMonth(0) + " to " + getMonth(1) + "] ");
