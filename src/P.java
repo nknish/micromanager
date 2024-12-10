@@ -1,8 +1,8 @@
 // P is for Print!
 public final class P {
     // how long does computer delay typing, and how much time between chars (in ms)
-    private static int delay = 20;
-    private static int charDelay = 2;
+    private static int delay = 200;
+    private static int charDelay = 20;
 
     // find a consistent way to sleep, and to handle Interrupted
     private static void sleep(int millis) {
@@ -30,7 +30,7 @@ public final class P {
                 } else {
                     x++;
                 }
-                sleep(charDelay * ((c == '.' || c == '?' || c == '!') ? 5 : 1)); // pause for sentences
+                sleep(charDelay);
             }
             if (w.length() >= 1 && (!w.equals(words[words.length - 1]) || s.charAt(s.length() - 1) == ' ')) {
                 System.out.print(" "); // add back spaces lost to .split(" ")
