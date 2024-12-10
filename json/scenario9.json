@@ -1,72 +1,70 @@
 {
-    "prompt": "introducing the scenario!",
+    "prompt": "holy smokes! we've got a major, major winter storm coming! i sure hope we're prepared well for this moment...if you choose an option that we aren't prepared for, things could get real bad. be careful!",
     "responses": {
-        "[1] option 1 response": [
+        "[1] we just upgraded our infrastructure - we can weather it.": [
             {                
-                "result": "this is the more frequent outcome (odds must add up to 1)",
-                "odds": 0.8,
-                "oddsBooster": "none",
-                "dCli": 5,
-                "dCon": 5,
-                "dCiv": 5
-            },
-            {                
-                "result": "this one happens every once in a while!",
-                "odds": 0.2,
-                "oddsBooster": "none",
+                "result": "wow, boss, it's outstanding how well prepared we were! this winter storm's got nothing on us. \n\n******************************************\n*****  [storm weathered successfully]  *****\n******************************************",
+                "odds": 0,
+                "oddsBooster": "repair",
                 "dCli": 10,
                 "dCon": 10,
                 "dCiv": 10
-            }
-        ],
-        "[2] option 2 response": [
-            {
-                "result": "50/50 chance in normal circumstances",
-                "odds": 0.5,
-                "oddsBooster": "none",
-                "dCli": 5,
-                "dCon": 5,
-                "dCiv": 5
             },
-            {
-                "result": "this one's way more likely if you have a good climate score!",
-                "odds": 0.5,
-                "oddsBooster": "cli",
-                "dCli": 5,
-                "dCon": 5,
-                "dCiv": 5
-            }
-        ],
-        "[3] option 3 response": [
-            {
-                "result": "guide's response to your choice",
+            {                
+                "result": "i have a bad feeling about this one, boss... \n\n******************************************\n***  [storm not weathered successfully]  ***\n******************************************",
                 "odds": 1,
                 "oddsBooster": "none",
-                "dCli": 5,
-                "dCon": 5,
-                "dCiv": 5
+                "dCli": 0,
+                "dCon": 0,
+                "dCiv": 0
             }
         ],
-        "[4] option 4 response": [
-            {
-                "result": "guide's response to your choice",
+        "[2] we may see damages, but we have rainy day funds to quickly recover.": [
+            {                
+                "result": "wow, boss, it's outstanding how well prepared we were! this winter storm's got nothing on us. \n\n******************************************\n*****  [storm weathered successfully]  *****\n******************************************",
+                "odds": 0,
+                "oddsBooster": "save",
+                "dCli": 10,
+                "dCon": 10,
+                "dCiv": 10
+            },
+            {                
+                "result": "i have a bad feeling about this one, boss... \n\n******************************************\n***  [storm not weathered successfully]  ***\n******************************************",
                 "odds": 1,
                 "oddsBooster": "none",
-                "dCli": 5,
-                "dCon": 5,
-                "dCiv": 5
+                "dCli": 0,
+                "dCon": 0,
+                "dCiv": 0
             }
         ],
-        "[5] option 5 response": [
-            {
-                "result": "guide's response to your choice",
+        "[3] we tested for this - we'll island if we need to.": [
+            {                
+                "result": "wow, boss, it's outstanding how well prepared we were! this winter storm's got nothing on us. \n\n******************************************\n*****  [storm weathered successfully]  *****\n******************************************",
+                "odds": 0,
+                "oddsBooster": "test",
+                "dCli": 10,
+                "dCon": 10,
+                "dCiv": 10
+            },
+            {                
+                "result": "i have a bad feeling about this one, boss... \n\n******************************************\n***  [storm not weathered successfully]  ***\n******************************************",
                 "odds": 1,
                 "oddsBooster": "none",
-                "dCli": 5,
-                "dCon": 5,
-                "dCiv": 5
+                "dCli": 0,
+                "dCon": 0,
+                "dCiv": 0
+            }
+        ],
+        "[4] it's too late to prepare now. let's hope for the best.": [
+            {
+                "result": "unfortunately, you seem to be right. this will be rough, but we'll get through it. the important thing is resilience, and to learn from our mistakes. \n\n******************************************\n***  [storm not weathered successfully]  ***\n******************************************",
+                "odds": 1,
+                "oddsBooster": "none",
+                "dCli": 2,
+                "dCon": 2,
+                "dCiv": 2
             }
         ]
     },
-    "ending": "close up the storyline"
+    "ending": "gee, that was tough. no matter how well-prepared you are, there's nothing like a big old winter storm to humble you. it really makes you reflect on the nature of this job, huh?\n...no matter how hard we work, not everything will go perfectly. we'll always miss something, or fall victim to factors outside of our control. with climate change ramping up, it's especially important that we keep up hope anyways: that way, we can power through and save our planet together."
 }
