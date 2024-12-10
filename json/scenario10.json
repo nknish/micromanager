@@ -1,72 +1,46 @@
 {
-    "prompt": "introducing the scenario!",
+    "prompt": "it looks like we're almost through the winter, boss! our microgrid may be small, but it sure is mighty. \n\nwe've become the envy of other towns. lizzy, the mayor of our neighbor tropoville, wants some advice on how we do it so well. should we recommend our microgrid approach to her, and how should we explain its benefits?",
     "responses": {
-        "[1] option 1 response": [
+        "[1] tell her that microgrids are the best solution for customers.": [
             {                
-                "result": "this is the more frequent outcome (odds must add up to 1)",
-                "odds": 0.8,
+                "result": "that's a good explanation, and one that pretty much everyone seems to agree with. here in our town, we've certainly been able to push prices down, listen to our customers, and keep the lights on when it counts. our townsfolk are glad that we prioritize them!",
+                "odds": 1,
                 "oddsBooster": "none",
-                "dCli": 5,
-                "dCon": 5,
-                "dCiv": 5
-            },
-            {                
-                "result": "this one happens every once in a while!",
-                "odds": 0.2,
+                "dCli": 8,
+                "dCon": 10,
+                "dCiv": 8
+            }
+        ],
+        "[2] explain the environmental benefits of microgrids.": [
+            {
+                "result": "it's true! our transition to renewable energy has been much faster because of our microgrid, and anyone can help by putting solar panels on their roof. we've also been able to listen to our local environmental advocates because we're so in touch with the community. it's great that we are still prioritizing eco-consciousness.",
+                "odds": 1,
                 "oddsBooster": "none",
                 "dCli": 10,
-                "dCon": 10,
+                "dCon": 8,
+                "dCiv": 8
+            }
+        ],
+        "[3] talk about the amazing benefits of local grid control": [
+            {
+                "result": "i'm sure they'll love that in tropoville: they love their civic processes! last i heard, almost every citizen is involved in one advocacy organization or another. instead of bothering with a faraway corporation, concerned citizens get to come to us directly. and so far, they've been ecstatic with our responsiveness.",
+                "odds": 1,
+                "oddsBooster": "none",
+                "dCli": 8,
+                "dCon": 8,
                 "dCiv": 10
             }
         ],
-        "[2] option 2 response": [
+        "[4] don't bother...say that microgrids are a waste of time!": [
             {
-                "result": "50/50 chance in normal circumstances",
-                "odds": 0.5,
-                "oddsBooster": "none",
-                "dCli": 5,
-                "dCon": 5,
-                "dCiv": 5
-            },
-            {
-                "result": "this one's way more likely if you have a good climate score!",
-                "odds": 0.5,
-                "oddsBooster": "cli",
-                "dCli": 5,
-                "dCon": 5,
-                "dCiv": 5
-            }
-        ],
-        "[3] option 3 response": [
-            {
-                "result": "guide's response to your choice",
+                "result": "you really think so? the townsfolk here are also sad to hear that...they think it's been doing a great job! maybe you're not giving yourself enough credit...",
                 "odds": 1,
                 "oddsBooster": "none",
-                "dCli": 5,
-                "dCon": 5,
-                "dCiv": 5
-            }
-        ],
-        "[4] option 4 response": [
-            {
-                "result": "guide's response to your choice",
-                "odds": 1,
-                "oddsBooster": "none",
-                "dCli": 5,
-                "dCon": 5,
-                "dCiv": 5
-            }
-        ],
-        "[5] option 5 response": [
-            {
-                "result": "guide's response to your choice",
-                "odds": 1,
-                "oddsBooster": "none",
-                "dCli": 5,
-                "dCon": 5,
-                "dCiv": 5
+                "dCli": 4,
+                "dCon": 4,
+                "dCiv": 4
             }
         ]
     },
-    "ending": "close up the storyline"
+    "ending": "microgrids aren't so well-known, and that's a shame. it's important that we do our part to share what we know to others. \nas a side note, did you know that every well-run microgrid can help the regional grid as a whole? microgrids like ours can contribute power to the broader system when we have some to spare, and in emergencies, islanding takes lots of strain off of struggling systems. it's a win-win! maybe one day, every town will run on a microgrid, and our whole system will be strong, resilient, responsive to local needs, and good for the environment."
 }

@@ -1,72 +1,46 @@
 {
-    "prompt": "introducing the scenario!",
+    "prompt": "time sure flies, boss! it feels like just yesterday when you first set foot in this office. but now, you've been here a year! i know your contract is almost up, and the folks in city hall will soon be deciding if they want to keep you around for the long term. i think you've done a great job! but it's not up to me. \n\nbefore they decide, let's present your vision: where do you want to take our microgrid in the next 10 years?",
     "responses": {
-        "[1] option 1 response": [
+        "[1] we can be bold: let's hit 100% local renewable energy!": [
             {                
-                "result": "this is the more frequent outcome (odds must add up to 1)",
-                "odds": 0.8,
-                "oddsBooster": "none",
-                "dCli": 5,
-                "dCon": 5,
-                "dCiv": 5
-            },
-            {                
-                "result": "this one happens every once in a while!",
-                "odds": 0.2,
+                "result": "i think that's beautiful and achievable, boss. if we can ditch that coal plant for good, we'll all be better off. what a great statement to cap off your first year.",
+                "odds": 1,
                 "oddsBooster": "none",
                 "dCli": 10,
-                "dCon": 10,
+                "dCon": 8,
+                "dCiv": 8
+            }
+        ],
+        "[2] microgrids are the future, so let's help our neighbors get up to speed.": [
+            {
+                "result": "that's a great idea, boss. the more microgrids around, the better off we'll all be. maybe one day, we can even generate enough renewable energy here to help other towns while they build their own power sources! a solid statement as your first year comes to a close.",
+                "odds": 0.5,
+                "oddsBooster": "none",
+                "dCli": 9,
+                "dCon": 8,
                 "dCiv": 10
             }
         ],
-        "[2] option 2 response": [
+        "[3] let's focus on batteries. energy storage will help a lot.": [
             {
-                "result": "50/50 chance in normal circumstances",
-                "odds": 0.5,
-                "oddsBooster": "none",
-                "dCli": 5,
-                "dCon": 5,
-                "dCiv": 5
-            },
-            {
-                "result": "this one's way more likely if you have a good climate score!",
-                "odds": 0.5,
-                "oddsBooster": "cli",
-                "dCli": 5,
-                "dCon": 5,
-                "dCiv": 5
-            }
-        ],
-        "[3] option 3 response": [
-            {
-                "result": "guide's response to your choice",
+                "result": "that's wise thinking, boss. battery technology is no trivial task, but it's crucial for places like ours that rely so heavily on solar power. it'll take some initial investing, but i have no doubt it will pay off. a bold statement to end your first year!",
                 "odds": 1,
                 "oddsBooster": "none",
-                "dCli": 5,
-                "dCon": 5,
-                "dCiv": 5
+                "dCli": 9,
+                "dCon": 9,
+                "dCiv": 9
             }
         ],
-        "[4] option 4 response": [
+        "[4] we're on the right track. let's just keep on working at it!": [
             {
-                "result": "guide's response to your choice",
+                "result": "way to project confidence, boss. managing a microgrid is no easy task, but it's clearly worth the trouble. we've got so much to show for! what a great sentiment to finish off your first year.",
                 "odds": 1,
                 "oddsBooster": "none",
-                "dCli": 5,
-                "dCon": 5,
-                "dCiv": 5
-            }
-        ],
-        "[5] option 5 response": [
-            {
-                "result": "guide's response to your choice",
-                "odds": 1,
-                "oddsBooster": "none",
-                "dCli": 5,
-                "dCon": 5,
-                "dCiv": 5
+                "dCli": 9,
+                "dCon": 9,
+                "dCiv": 9
             }
         ]
     },
-    "ending": "close up the storyline"
+    "ending": "well, this is it...let's see what comes next!"
 }
