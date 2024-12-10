@@ -61,13 +61,13 @@ public final class Game {
             m = "*" + m;
         }
 
-        System.out.println(line);
-        System.out.println(line);
-        System.out.println(s);
-        System.out.println(m);
-        System.out.println(s);
-        System.out.println(line);
-        System.out.println(line);
+        P.printlnInstAndPause(line);
+        P.printlnInstAndPause(line);
+        P.printlnInstAndPause(s);
+        P.printlnInstAndPause(m);
+        P.printlnInstAndPause(s);
+        P.printlnInstAndPause(line);
+        P.printlnInstAndPause(line);
         P.println();
         P.println("\t...in the " + adjectives[(int) (Math.random() * adjectives.length)] + " little town of " + tn);
         P.println();

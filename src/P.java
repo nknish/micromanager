@@ -59,6 +59,11 @@ public final class P {
         println();
     }
 
+    protected static void printlnInstAndPause(String s) {
+        System.out.println(s);
+        sleep(delay);
+    }
+
     protected static void clear() {
         println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
     }
