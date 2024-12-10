@@ -57,4 +57,12 @@ public final class Success {
     public static boolean hasSpecial(String s) {
         return specials.contains(s);
     }
+
+    public static void resetAll() {
+        cli = 0;
+        con = 0;
+        civ = 0;
+        month = 0;
+        specials = new HashSet<String>();
+    }
 }
