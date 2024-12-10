@@ -111,7 +111,7 @@ public final class Intro {
             k.nextLine();
             P.println("why, thank you! anyways, back to business.", gn);
         } else {
-            P.println("cool. nice to meet you, " + pn + "!", gn);
+            P.println("cool. nice to meet you, " + pn + "! i'll probably just call you 'boss' though.", gn);
         }
         P.println();
 
