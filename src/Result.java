@@ -7,9 +7,12 @@ public final class Result {
     private final String pn = Micromanager.playerName;
     private final String tn = Micromanager.townName;
 
-    private final boolean rehired = Success.getCiv() + Success.getCli() + Success.getCon() > 275;
-    private final String best = Success.getCli() > Success.getCon() && Success.getCli() > Success.getCiv() ? "cli"
-            : (Success.getCiv() > Success.getCon() ? "civ" : "con");
+    private final int cli = Success.getCli();
+    private final int con = Success.getCon();
+    private final int civ = Success.getCiv();
+
+    private final boolean rehired = civ + con + cli > 190 || Math.max(Math.max(cli + con, cli + civ), con + civ) > 155;
+    private final String best = cli > con && cli > civ ? "cli" : (civ > con ? "civ" : "con");
 
     protected Result() {
         finishLastScenario();
