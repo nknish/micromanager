@@ -1,72 +1,46 @@
 {
-    "prompt": "introducing the scenario!",
+    "prompt": "it's starting to get cold outside...the breeze is breezing, christmas lights are going up, and people are heating their homes with their high-efficiency heat pumps. however, they still use up a good amount of energy, which means we'll have increased demand in the coming months. at the same time, all of the solar farms and rooftop panels will be generating less energy because the sunlight isn't as powerful.one way or another, we have to rely on some coal power, but we always like to brainstorm ways to save energy if possible.\n\nsome buddies of mine at the local radio station offered to help us put together a public service announcement. what kind of message should we send out?",
     "responses": {
-        "[1] option 1 response": [
+        "[1] \"at every hour, you can count on local power!\"": [
             {                
-                "result": "this is the more frequent outcome (odds must add up to 1)",
-                "odds": 0.8,
+                "result": "that sounds more like an advertisement than a public service announcement, but sure! it will definitely improve our image...",
+                "odds": 1,
                 "oddsBooster": "none",
-                "dCli": 5,
-                "dCon": 5,
+                "dCli": 0,
+                "dCon": 9,
+                "dCiv": 7
+            }
+        ],
+        "[2] \"throw on a sweater and make our grid better!\"": [
+            {
+                "result": "hey, that's pretty solid! i think it strikes the right balance between encouraging and friendly. the folks at the radio station will love it, too.",
+                "odds": 1,
+                "oddsBooster": "none",
+                "dCli": 9,
+                "dCon": 6,
+                "dCiv": 6
+            }
+        ],
+        "[3] \"turn the heat down or get out of town!\"": [
+            {
+                "result": "welp, that's certainly a strong message. it may work, but people won't love being told what to do. but a climate win is a climate win, i guess!",
+                "odds": 1,
+                "oddsBooster": "none",
+                "dCli": 9,
+                "dCon": 3,
                 "dCiv": 5
-            },
-            {                
-                "result": "this one happens every once in a while!",
-                "odds": 0.2,
+            }
+        ],
+        "[4] let's not waste our time on this...": [
+            {
+                "result": "aww man, that's no fun! but you know, boss, you're probably right. i think there are better ways to spend our time and energy. this is why you're in charge and not me!",
+                "odds": 1,
                 "oddsBooster": "none",
                 "dCli": 10,
                 "dCon": 10,
                 "dCiv": 10
             }
-        ],
-        "[2] option 2 response": [
-            {
-                "result": "50/50 chance in normal circumstances",
-                "odds": 0.5,
-                "oddsBooster": "none",
-                "dCli": 5,
-                "dCon": 5,
-                "dCiv": 5
-            },
-            {
-                "result": "this one's way more likely if you have a good climate score!",
-                "odds": 0.5,
-                "oddsBooster": "cli",
-                "dCli": 5,
-                "dCon": 5,
-                "dCiv": 5
-            }
-        ],
-        "[3] option 3 response": [
-            {
-                "result": "guide's response to your choice",
-                "odds": 1,
-                "oddsBooster": "none",
-                "dCli": 5,
-                "dCon": 5,
-                "dCiv": 5
-            }
-        ],
-        "[4] option 4 response": [
-            {
-                "result": "guide's response to your choice",
-                "odds": 1,
-                "oddsBooster": "none",
-                "dCli": 5,
-                "dCon": 5,
-                "dCiv": 5
-            }
-        ],
-        "[5] option 5 response": [
-            {
-                "result": "guide's response to your choice",
-                "odds": 1,
-                "oddsBooster": "none",
-                "dCli": 5,
-                "dCon": 5,
-                "dCiv": 5
-            }
         ]
     },
-    "ending": "close up the storyline"
+    "ending": "yknow, with all the chaos around us, sometimes it's nice to let yourself get distracted with something a little more lighthearted. however, just because it's not as technical doesn't mean that communication isn't important: we have to strike the balance between earning public trust and using it to do good work. if we don't earn their trust, we'll be powerless, and if we don't use it, we'll be pointless! but now, it's time to get back to work!"
 }
