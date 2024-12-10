@@ -1,72 +1,64 @@
 {
-    "prompt": "introducing the scenario!",
+    "prompt": "we've been thinking about preparing for winter, boss, and we've been hearing that it may be more rough than usual. our microgrid has the capacity to 'island' in times of crisis; this just means that we're temporarily disconnected from the regional grid, insulating us from whatever issues a storm might cause the neighboring towns. the only downside is, we cut off outside supply. this can force us to raise our prices or even churn out brief rolling blackouts across town!\n\nwe've never had to island, so we were thinking of testing it out by islanding late at night, when energy usage is low but our local wind turbines are still spinning. should we give it a try?",
     "responses": {
-        "[1] option 1 response": [
+        "[1] sounds wise, let's do it!": [
             {                
-                "result": "this is the more frequent outcome (odds must add up to 1)",
-                "odds": 0.8,
-                "oddsBooster": "none",
-                "dCli": 5,
-                "dCon": 5,
-                "dCiv": 5
-            },
-            {                
-                "result": "this one happens every once in a while!",
-                "odds": 0.2,
-                "oddsBooster": "none",
-                "dCli": 10,
-                "dCon": 10,
-                "dCiv": 10
-            }
-        ],
-        "[2] option 2 response": [
-            {
-                "result": "50/50 chance in normal circumstances",
+                "result": "\n\n\n...alright, we've run the tests and everything went well! it turns out our microgrid is pretty darn strong and resilient. this should give us and our town a lot of confidence going forward.",
                 "odds": 0.5,
                 "oddsBooster": "none",
-                "dCli": 5,
-                "dCon": 5,
-                "dCiv": 5
+                "dCli": 9,
+                "dCon": 7,
+                "dCiv": 9,
+                "special": "test"
             },
-            {
-                "result": "this one's way more likely if you have a good climate score!",
-                "odds": 0.5,
-                "oddsBooster": "cli",
-                "dCli": 5,
+            {                
+                "result": "\n\n\n...alright, we've run the tests and everything went ok. we did have to briefly spike prices, but it'll just be a small blip on folks' bill at the end of the month. on the bright side, our microgrid is pretty darn strong and resilient, which should give us and our town a lot of confidence going forward.",
+                "odds": 0.4,
+                "oddsBooster": "none",
+                "dCli": 8,
                 "dCon": 5,
-                "dCiv": 5
+                "dCiv": 8,
+                "special": "test"
+            },
+            {                
+                "result": "\n\n\n...yeesh, boss, that went pretty badly. we had to reconnect prematurely, but we couldn't avoid some brief rolling blackouts! most folks aren't going to be so happy about this, but at least we learned our lesson.",
+                "odds": 0.1,
+                "oddsBooster": "none",
+                "dCli": 7,
+                "dCon": 3,
+                "dCiv": 6
             }
         ],
-        "[3] option 3 response": [
+        "[2] let's run a really short test, just to be safe.": [
+            {                
+                "result": "\n\n\n...alright, we've run the tests and everything went well! it turns out our microgrid is pretty darn strong and resilient. this should give us and our town a lot of confidence going forward.",
+                "odds": 0.6,
+                "oddsBooster": "none",
+                "dCli": 8,
+                "dCon": 6,
+                "dCiv": 8,
+                "special": "test"
+            },
+            {                
+                "result": "\n\n\n...alright, we've run the tests and everything went ok. we did have to briefly spike prices, but it'll just be a small blip on folks' bill at the end of the month. on the bright side, our microgrid is pretty darn strong and resilient, which should give us and our town a lot of confidence going forward.",
+                "odds": 0.4,
+                "oddsBooster": "none",
+                "dCli": 7,
+                "dCon": 5,
+                "dCiv": 7,
+                "special": "test"
+            }
+        ],
+        "[3] it's too risky. we'll cross that bridge when we get there.": [
             {
-                "result": "guide's response to your choice",
+                "result": "ok, boss. let's hope this doesn't come back to bite us!",
                 "odds": 1,
                 "oddsBooster": "none",
                 "dCli": 5,
-                "dCon": 5,
-                "dCiv": 5
-            }
-        ],
-        "[4] option 4 response": [
-            {
-                "result": "guide's response to your choice",
-                "odds": 1,
-                "oddsBooster": "none",
-                "dCli": 5,
-                "dCon": 5,
-                "dCiv": 5
-            }
-        ],
-        "[5] option 5 response": [
-            {
-                "result": "guide's response to your choice",
-                "odds": 1,
-                "oddsBooster": "none",
-                "dCli": 5,
-                "dCon": 5,
+                "dCon": 9,
                 "dCiv": 5
             }
         ]
     },
-    "ending": "close up the storyline"
+    "ending": "thinking ahead is hard, but it's something that needs to be done. shortsighted decisions might save some money or time early on, but we're not in the short-term business. when we prioritize our long term goals, even in the face of some criticism, that's when we're really serving our town as well as we can. anyways, it's 3 in the morning and i'm going to sleep!"
 }
