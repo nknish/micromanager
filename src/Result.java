@@ -21,7 +21,8 @@ public final class Result {
     }
 
     private void finishLastScenario() {
-        P.print("well, this is it...i'll be back with news tomorrow.", gn);
+        P.print("well, this is it...time to see if the folks at " + tn
+                + " city hall are going to renew your contract for the future. i'll be back with news tomorrow.", gn);
         P.println();
         P.print("[press enter to proceed to your last day] ");
         k.nextLine();
