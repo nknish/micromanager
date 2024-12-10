@@ -12,6 +12,7 @@ public final class Gameplay {
     // names of thingies
     private final String gn = Micromanager.guide;
     private final String pn = Micromanager.playerName;
+    private final String tn = Micromanager.townName;
     private final String[] months = { "january", "february", "march", "april", "may", "june", "july", "august",
             "september", "october", "november", "december" };
 
@@ -66,6 +67,8 @@ public final class Gameplay {
         System.out.println(s);
         System.out.println(line);
         System.out.println(line);
+        P.println();
+        P.println("\t...in the lovely little town of " + tn);
         P.println();
     }
 
@@ -142,7 +145,7 @@ public final class Gameplay {
                         }
                     }
                 } else if (Success.hasSpecial(o.oddsBooster)) {
-                    return o;  // an outcome that occurs based on a special previous precondition
+                    return o; // an outcome that occurs based on a special previous precondition
                 }
             }
         }
