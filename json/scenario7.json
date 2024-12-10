@@ -3,7 +3,7 @@
     "responses": {
         "[1] sounds wise, let's do it!": [
             {                
-                "result": "\n\n\n...alright, we've run the tests and everything went well! it turns out our microgrid is pretty darn strong and resilient. this should give us and our town a lot of confidence going forward.",
+                "result": "...\n...\n...\n...alright, we've run the tests and everything went well! it turns out our microgrid is pretty darn strong and resilient. this should give us and our town a lot of confidence going forward.",
                 "odds": 0.5,
                 "oddsBooster": "none",
                 "dCli": 9,
@@ -12,7 +12,7 @@
                 "special": "test"
             },
             {                
-                "result": "\n\n\n...alright, we've run the tests and everything went ok. we did have to briefly spike prices, but it'll just be a small blip on folks' bill at the end of the month. on the bright side, our microgrid is pretty darn strong and resilient, which should give us and our town a lot of confidence going forward.",
+                "result": "...\n...\n...\n...alright, we've run the tests and everything went ok. we did have to briefly spike prices, but it'll just be a small blip on folks' bill at the end of the month. on the bright side, our microgrid is pretty darn strong and resilient, which should give us and our town a lot of confidence going forward.",
                 "odds": 0.4,
                 "oddsBooster": "none",
                 "dCli": 8,
@@ -21,7 +21,7 @@
                 "special": "test"
             },
             {                
-                "result": "\n\n\n...yeesh, boss, that went pretty badly. we had to reconnect prematurely, but we couldn't avoid some brief rolling blackouts! most folks aren't going to be so happy about this, but at least we learned our lesson.",
+                "result": "...\n...\n...\n...yeesh, boss, that went pretty badly. we had to reconnect prematurely, but we couldn't avoid some brief rolling blackouts! most folks aren't going to be so happy about this, but at least we learned our lesson.",
                 "odds": 0.1,
                 "oddsBooster": "none",
                 "dCli": 7,
@@ -31,7 +31,7 @@
         ],
         "[2] let's run a really short test, just to be safe.": [
             {                
-                "result": "\n\n\n...alright, we've run the tests and everything went well! it turns out our microgrid is pretty darn strong and resilient. this should give us and our town a lot of confidence going forward.",
+                "result": "...\n...\n...\n...alright, we've run the tests and everything went well! it turns out our microgrid is pretty darn strong and resilient. this should give us and our town a lot of confidence going forward.",
                 "odds": 0.6,
                 "oddsBooster": "none",
                 "dCli": 8,
@@ -40,7 +40,7 @@
                 "special": "test"
             },
             {                
-                "result": "\n\n\n...alright, we've run the tests and everything went ok. we did have to briefly spike prices, but it'll just be a small blip on folks' bill at the end of the month. on the bright side, our microgrid is pretty darn strong and resilient, which should give us and our town a lot of confidence going forward.",
+                "result": "...\n...\n...\n...alright, we've run the tests and everything went ok. we did have to briefly spike prices, but it'll just be a small blip on folks' bill at the end of the month. on the bright side, our microgrid is pretty darn strong and resilient, which should give us and our town a lot of confidence going forward.",
                 "odds": 0.4,
                 "oddsBooster": "none",
                 "dCli": 7,
@@ -60,5 +60,5 @@
             }
         ]
     },
-    "ending": "thinking ahead is hard, but it's something that needs to be done. shortsighted decisions might save some money or time early on, but we're not in the short-term business. when we prioritize our long term goals, even in the face of some criticism, that's when we're really serving our town as well as we can. anyways, it's 3 in the morning and i'm going to sleep!"
+    "ending": "thinking ahead is hard, but it's something that needs to be done. shortsighted decisions might save some money or time early on, but we're not in the short-term business. when we prioritize our long term goals, even in the face of some criticism, that's when we're really serving our town as well as we can. anyways, it's 3am and i'm going to sleep!"
 }
