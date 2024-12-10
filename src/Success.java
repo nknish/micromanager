@@ -1,8 +1,11 @@
+import java.util.HashSet;
+
 public final class Success {
     private static int cli = 0; // climate score
     private static int con = 0; // consumer score
     private static int civ = 0; // civic score
     private static int month = 0; // month (0 is intro, 13 is the end of the game)
+    private static HashSet<String> specials = new HashSet<String>();
 
     /*
      * each month, the player gets up to 10 points per category
@@ -45,8 +48,13 @@ public final class Success {
 
     public static void nextMonth() {
         month++;
-        if (month == 13) {
-            // TODO: how do we wrap up?
-        }
+    }
+
+    public static void addSpecial(String s) {
+        specials.add(s);
+    }
+
+    public static boolean hasSpecial(String s) {
+        return specials.contains(s);
     }
 }
