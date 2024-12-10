@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.List;
 
-public final class Gameplay {
+public final class Game {
     // all of the scenarios, parsed from JSON!
     private final ArrayList<Scenario> scenarios = R.getScenariosJSON();
 
@@ -16,7 +16,7 @@ public final class Gameplay {
     private final String[] months = { "january", "february", "march", "april", "may", "june", "july", "august",
             "september", "october", "november", "december" };
 
-    protected Gameplay() {
+    protected Game() {
         for (Scenario s : scenarios) {
             // pretty print the month design, increment the month variable
             nextMonth();

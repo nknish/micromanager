@@ -6,7 +6,7 @@ import com.google.gson.Gson;
 
 // R is for Read!
 public final class R {
-    public static ArrayList<Scenario> getScenariosJSON() {
+    protected static ArrayList<Scenario> getScenariosJSON() {
         Gson gson = new Gson();
         ArrayList<Scenario> scens = new ArrayList<Scenario>();
         boolean nothingLeft = false;
@@ -31,7 +31,7 @@ public final class R {
         return scens;
     }
 
-    public static String getStatement() {
+    protected static String getStatement() {
         File f = new File("txt/statement.txt");
         String catchMessage = "statement file not found :(\ncheck out https://github.com/nknish/micromanager to find the statement";
         String s = getWholeFile(f, catchMessage);
@@ -42,7 +42,7 @@ public final class R {
         return s;
     }
 
-    public static String getHelp() {
+    protected static String getHelp() {
         File f = new File("txt/help.txt");
         String catchMessage = "we need help getting help, sorry :(";
         String s = getWholeFile(f, catchMessage);

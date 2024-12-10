@@ -11,7 +11,7 @@ public final class Success {
      * each month, the player gets up to 10 points per category
      * which can total up to 120 at the end (perfect score)
      */
-    public static void updateScores(int cli, int con, int civ) {
+    protected static void updateScores(int cli, int con, int civ) {
         if (cli < 0 || cli > 10 || con < 0 || con > 10 || civ < 0 || civ > 10) {
             throw new IndexOutOfBoundsException("score updates must be within range 0-10");
         }
@@ -21,15 +21,15 @@ public final class Success {
     }
 
     //
-    public static int getCli() {
+    protected static int getCli() {
         return normalize(cli);
     }
 
-    public static int getCon() {
+    protected static int getCon() {
         return normalize(con);
     }
 
-    public static int getCiv() {
+    protected static int getCiv() {
         return normalize(civ);
     }
 
@@ -42,23 +42,23 @@ public final class Success {
         return (score * 10) / month; // for during the game, calculate predicted total score
     }
 
-    public static int getMonth() {
+    protected static int getMonth() {
         return month;
     }
 
-    public static void nextMonth() {
+    protected static void nextMonth() {
         month++;
     }
 
-    public static void addSpecial(String s) {
+    protected static void addSpecial(String s) {
         specials.add(s);
     }
 
-    public static boolean hasSpecial(String s) {
+    protected static boolean hasSpecial(String s) {
         return specials.contains(s);
     }
 
-    public static void resetAll() {
+    protected static void resetAll() {
         cli = 0;
         con = 0;
         civ = 0;

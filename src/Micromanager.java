@@ -1,5 +1,4 @@
 public final class Micromanager {
-    // things the player sets at the beginning
     protected static String townName;
     protected static String playerName;
     protected static String guide;
@@ -10,7 +9,7 @@ public final class Micromanager {
         while (playAgain) {
             initializeData();
             new Intro();
-            new Gameplay();
+            new Game();
             new Result();
         }
         new Outro();
