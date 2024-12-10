@@ -141,6 +141,8 @@ public final class Gameplay {
                             return o;
                         }
                     }
+                } else if (Success.hasSpecial(o.oddsBooster)) {
+                    return o;  // an outcome that occurs based on a special previous precondition
                 }
             }
         }
@@ -161,6 +163,9 @@ public final class Gameplay {
     private void handleOutcome(Scenario.Outcome o) {
         // calculate success metrics
         Success.updateScores(o.dCli, o.dCon, o.dCiv);
+        if (o.special != null) {
+            Success.addSpecial(o.special);
+        }
 
         // tell the player what happened
         P.println();
