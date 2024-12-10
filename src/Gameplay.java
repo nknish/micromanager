@@ -118,7 +118,7 @@ public final class Gameplay {
     }
 
     private Scenario.Outcome rollDice(List<Scenario.Outcome> os) {
-        int bar = 90; // how high of a score do you need to get an odds boost?
+        int bar = 67; // how high of a score do you need to get an odds boost?
 
         // check for odds boosts and implement them
         for (Scenario.Outcome o : os) {
@@ -170,6 +170,8 @@ public final class Gameplay {
         P.println("......climate-friendliness score: " + o.dCli + "/10");
         P.println("........consumer happiness score: " + o.dCon + "/10");
         P.println("..........civic engagement score: " + o.dCiv + "/10");
+        if (Success.getMonth() == 1)
+            return;
         P.println("and here are your total scores:", gn);
         P.println("......climate-friendliness score: " + Success.getCli());
         P.println("........consumer happiness score: " + Success.getCon());

@@ -33,10 +33,10 @@ public final class Success {
     // return a normalized version of the score based on the month
     private static int normalize(int score) {
         if (month == 13)
-            return score; // for 'month 13', aka end of game
+            return (score * 10) / 12; // for 'month 13', aka end of game
         if (month == 0)
             return 0; // for 'month 0', aka before the start
-        return score * 12 / month; // for during the game, calculate predicted total score
+        return (score * 10) / month; // for during the game, calculate predicted total score
     }
 
     public static int getMonth() {
