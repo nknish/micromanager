@@ -20,4 +20,4 @@ _(note: you must have [java](https://www.java.com/en/download/help/download_opti
    cd downloads\micromanager-main\bin && java Micromanager
    ```
 
-...and that should be it!
+...press enter, and that should be it!
