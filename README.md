@@ -1,5 +1,3 @@
-*(click on `statement.pdf` above to view the complete unessay project statement)*
-
 # micromanager
 
 **a text-based game where you manage a microgrid!**
