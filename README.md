@@ -20,6 +20,8 @@ a text-based game where you manage a microgrid!
 2. make your way over to the proper directory with `cd micromanager/bin`
 3. finally, start the game with `java Micromanager`
 
+(you should also totally make your terminal exactly 80 chars wide for the best experience)
+
 ## tech stack
 
 - it's all java (because object-oriented programming is cool!)

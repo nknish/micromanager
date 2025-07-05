@@ -19,7 +19,7 @@ public final class P {
         int x = 0;
         for (String w : words) {
             char[] arr = w.toCharArray();
-            if (x + arr.length > 95) {
+            if (x + arr.length >= 80) {
                 println();
                 x = 0;
             }
@@ -36,7 +36,6 @@ public final class P {
                 System.out.print(" "); // add back spaces lost to .split(" ")
                 x++;
             }
-            x++;
         }
         sleep(delay);
     }
