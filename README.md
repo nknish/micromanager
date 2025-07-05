@@ -1,21 +1,32 @@
 # micromanager
 
-**a text-based game where you manage a microgrid!**
+a text-based game where you manage a microgrid!
 
-a simple download will (hopefully) be coming soon! in the meantime, if you'd like to run micromanager on your own computer, you may be able to do so by following these steps:
+## description
 
-_(note: you must have [java](https://www.java.com/en/download/help/download_options.html) installed on your computer)_
+- in this game, you'll navigate the excitement, challenges, and conundrums of managing a small-town microgrid
+- you'll learn all about how microgrids work (with their many benefits and drawbacks) and weigh decisions that face real policymakers and public servants who deliver power to the public
+- plus, you'll have help from a lovely assistant (probably) named bub
 
-1. clone the repo.
-2. open your computer's command line or terminal, and set it to full screen.
-3. copy and paste the following script into your command line/terminal:
-   1. for `mac` users:
-   ```
-   cd downloads/micromanager-main/bin; java Micromanager
-   ```
-   2. for `windows` users:
-   ```
-   cd downloads\micromanager-main\bin && java Micromanager
-   ```
+## installation
 
-...press enter, and that should be it!
+### dependencies
+
+- you've gotta have [java](https://www.java.com/en/download/help/download_options.html) installed on your computer
+
+### instructions
+
+1. clone the repo with `git clone https://github.com/nknish/micromanager/`
+2. make your way over to the proper directory with `cd micromanager/bin`
+3. finally, start the game with `java Micromanager`
+
+## tech stack
+
+- it's all java (because object-oriented programming is cool!)
+- the story is stored in a bunch of json files to keep it nice and flexible
+
+## credits
+
+- google's [gson](https://github.com/google/gson) library
+- abby carroll taught an awesome class that made this project happen
+- my main microgrid-related sources are in sources.txt
