@@ -17,8 +17,8 @@ a text-based game where you manage a microgrid!
 ### instructions
 
 1. clone the repo with `git clone https://github.com/nknish/micromanager/`
-2. make your way over to the proper directory with `cd micromanager/bin`
-3. finally, start the game with `java Micromanager`
+2. make your way over to the proper directory with `cd micromanager`
+3. finally, start the game with `java -cp bin:lib/gson-2.11.0.jar Micromanager`
 
 (you should also totally make your terminal exactly 80 chars wide for the best experience)
 
